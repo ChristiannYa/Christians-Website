@@ -11,6 +11,7 @@ import homeActive from './home_active-icon.svg';
 
 import html from './html-icon.svg';
 import javascript from './javascript-icon.svg';
+import swipeLeft from './left-icon.svg';
 
 import nodejsDark from './nodejs_dark-icon.svg';
 import nodejsLight from './nodejs_light-icon.svg';
@@ -29,6 +30,7 @@ import portfolioActive from './portfolio_active-icon.svg';
 import postgresql from './postgresql-icon.svg';
 
 import reactjs from './reactjs-icon.svg';
+import swipeRight from './right-icon.svg';
 import sasscss from './sasscss-icon.svg';
 
 import skillsDark from './skills_dark-icon.svg';
@@ -39,12 +41,12 @@ import tailwindLight from './tailwind_light-icon.svg';
 
 export const icons = {
   css: { icon: css, hasTheme: false },
-  github:{
+  github: {
     light: gitHubLight,
     dark: gitHubDark,
     hasTheme: true,
   },
-  gmail: { icon: gmail, hasTheme: false, },
+  gmail: { icon: gmail, hasTheme: false },
   home: {
     light: homeLight,
     dark: homeDark,
@@ -53,7 +55,8 @@ export const icons = {
   },
   html: { icon: html, hasTheme: false },
   javascript: { icon: javascript, hasTheme: false },
-  nodejs: { 
+  left: { icon: swipeLeft, hasTheme: false },
+  nodejs: {
     light: nodejsLight,
     dark: nodejsDark,
     hasTheme: true,
@@ -74,18 +77,19 @@ export const icons = {
     dark: portfolioDark,
     hasTheme: true,
     active: portfolioActive,
-  }, 
+  },
   postgresql: { icon: postgresql, hasTheme: false },
   reactjs: { icon: reactjs, hasTheme: false },
+  right: { icon: swipeRight, hasTheme: false },
   sasscss: { icon: sasscss, hasTheme: false },
   skills: {
     light: skillsLight,
     dark: skillsDark,
     hasTheme: true,
   },
-  tailwind: { 
+  tailwind: {
     light: tailwindLight,
     dark: tailwindDark,
     hasTheme: true,
-  }
+  },
 };

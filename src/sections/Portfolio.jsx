@@ -1,6 +1,17 @@
 import { portfolio } from '../constants/portfolio';
+import { icons } from '../assets/icons';
 
 const Portfolio = () => {
+  const portfolioContainer = (direction) => {
+    const container = document.querySelector('.portfolio');
+    const scrollDistance = 500;
+
+    container.scrollBy({
+      left: direction === 'left' ? -scrollDistance : scrollDistance,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <section id="portfolio" className="section md:flexcol">
       <div className="section__child pt-10">
@@ -13,7 +24,7 @@ const Portfolio = () => {
                   <h2 className="text-preset-3">{item.title}</h2>
                   <p className="text-preset-3-md">{item.category}</p>
                 </div>
-                <div className='portfolio__preview'>
+                <div className="portfolio__preview">
                   <a
                     href={item.link}
                     target="_blank"
@@ -36,6 +47,21 @@ const Portfolio = () => {
                 <p className="text-preset-4">{item.desc}</p>
               </div>
             ))}
+          </div>
+
+          <div className="flex w-full gap-x-4 min-[769px]:hidden">
+            <button
+              onClick={() => portfolioContainer('left')}
+              className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
+            >
+              <img src={icons.left.icon} alt="" width={18} height={18} />
+            </button>
+            <button
+              onClick={() => portfolioContainer('right')}
+              className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
+            >
+              <img src={icons.right.icon} alt="" width={18} height={18} />
+            </button>
           </div>
         </div>
       </div>
