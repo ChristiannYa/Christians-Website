@@ -22,7 +22,7 @@ const Portfolio = () => {
               <div key={item.id} className="portfolio__item">
                 <div className="flex-col">
                   <h2 className="text-preset-3">{item.title}</h2>
-                  <p className="text-preset-3-md">{item.category}</p>
+                  <p className="text-preset-3-md -mt-1">{item.category}</p>
                 </div>
                 <div className="portfolio__preview">
                   <a
@@ -34,7 +34,7 @@ const Portfolio = () => {
                     <img src={item.image} className="" />
                   </a>
                 </div>
-                <div className="gap-1 flex w-fit">
+                <div className="gap-1 flex w- mt-2">
                   {item.tools.map((tool) => (
                     <span
                       key={tool.id}

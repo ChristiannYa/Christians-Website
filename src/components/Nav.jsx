@@ -42,23 +42,25 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
 
   // Section observer
   useEffect(() => {
-    const observerOptions = { root: null, threshold: 0.4 };
+    const observerOptions = {
+      root: null,
+      threshold: [0.2, 0.5, 0.8],
+      rootMargin: '-20% 0px -20% 0px',
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          console.log(entry.target.id);
+        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
           setActiveSection(entry.target.id);
         }
       });
     }, observerOptions);
 
-    navLinks.forEach((link) => {
-      const section = document.getElementById(link.path.replace('#', ''));
-      if (section) observer.observe(section);
-    });
+    const sections = document.querySelectorAll('.section');
+    sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
-  }, []);
+  }, []);  
 
   useEffect(() => {
     adjustPageSpacing();

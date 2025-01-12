@@ -21,7 +21,7 @@
   --hover-link-color: #070808;
   --hover-link-active: #b70007;
 
-  --blur-overlay: rgba(255, 255, 255, 0.1);
+  --blur-overlay: rgba(255, 255, 255, 0.12);
 }
 
 [data-theme="dark"] {
@@ -35,7 +35,7 @@
   --hover-link-color: #f3f5f5;
   --hover-link-active: #b70007;
 
-  --blur-overlay: rgba(0, 0, 0, 0.1);
+  --blur-overlay: rgba(0, 0, 0, 0.12);
 }
 
 body {

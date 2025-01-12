@@ -17,18 +17,18 @@ const Intro = ({ isDarkMode }) => {
             </p>
             <p className="text-preset-2">
               I believe that great a web design, starts with a focus on{' '}
-              <b>simplicity</b>, ensuring that users can easily navigate and
-              enjoy a smooth, and user-friendly experience.
+              <b>simplicity</b> and <b>elegance</b>, ensuring that users can
+              easily navigate and enjoy a smooth, and user-friendly experience.
             </p>
             <p className="text-preset-2">
               Outside of coding, I enjoy playing chess, which enhances my
               thinking and problem-solving skills.
             </p>
             <p className="text-preset-2">
-              <b>Code</b> languages and <b>tools</b> I use
+              Preferred <b>tech</b> stack:
             </p>
             <Skills isDarkMode={isDarkMode} />
-            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[180px] max-md:mx-auto">
+            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-sm:w-[200px] max-md:mx-auto">
               <img
                 src={christian}
                 alt="Christian photo"
