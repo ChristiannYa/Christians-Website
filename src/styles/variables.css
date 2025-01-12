@@ -1,0 +1,45 @@
+:root {
+  /* 
+    Remember to change the accent colors for 
+    the active link icons and in the 
+    tailwind.config.js file as well
+  */
+
+  --ff-1: 'MR ROBOT', monospace;
+  --ff-2: 'Albert Sans', serif;
+  --ff-3: 'Nunito', serif;
+
+  /* Default colors */
+  --acc-1: #b70007;
+  --bg-color: #f3f5f5;
+  --bg-color-md: #d8dbe0;
+
+  --text1-op-full: #070808;
+  --text1-op-md: #07080890;
+
+  --link-color: #454f55;
+  --hover-link-color: #070808;
+  --hover-link-active: #b70007;
+
+  --blur-overlay: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] {
+  --bg-color: #000000;
+  --bg-color-md: #222;
+
+  --text1-op-full: #d4d4d8;
+  --text1-op-md: #d4d4d890;
+
+  --link-color: #d8dbe080;
+  --hover-link-color: #f3f5f5;
+  --hover-link-active: #b70007;
+
+  --blur-overlay: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  background-color: var(--bg-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+  scroll-behavior: smooth;
+}

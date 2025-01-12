@@ -1,0 +1,52 @@
+.portfolio {
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  @media (max-width: 768px) {
+    gap: 24px 12px;
+  }
+
+  &__preview {
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    &::after {
+      content: '';
+      background: var(--blur-overlay);
+      transition: background 0.3s ease;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+
+        img {
+          transform: scale(1.03);
+        }
+        
+        &::after {
+          background: rgba(255, 255, 255, 0);
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  &__skill {
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+}

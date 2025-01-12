@@ -1,0 +1,79 @@
+.text-preset-1 {
+  /* 
+    Nav anchor tags
+  */
+  font-family: var(--ff-3);
+  font-weight: 600;
+  color: var(--link-color);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    &:hover {
+      color: var(--hover-link-color);
+    }
+  }
+}
+
+.text-preset-2 {
+  /*
+    Intro paragraph
+  */
+  font-family: var(--ff-3);
+  font-size: 1.125rem;
+  color: var(--text1-op-full);
+}
+
+.text-preset-3 {
+  /*
+    Portfolio title
+  */
+  font-family: var(--ff-3);
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text1-op-full);
+}
+.text-preset-3-md {
+  font-family: var(--ff-3);
+  font-size: 1.125rem;
+  color: var(--text1-op-md);
+}
+
+.text-preset-4 {
+  /*
+    Normal paragraphs
+  */
+  font-family: var(--ff-3);
+  font-size: 1rem;
+  color: var(--text1-op-full);
+}
+.text-preset-4-md {
+  font-family: var(--ff-3);
+  font-size: 1rem;
+  color: var(--text1-op-md);
+}
+
+.text-preset-5 {
+  /*
+    Skills
+  */
+  font-family: var(--ff-3);
+  font-size: .9rem;
+  color: var(--text1-op-full);
+}
+.text-preset-5-md {
+  /*
+    Tools used
+  */
+  font-family: var(--ff-3);
+  font-size: .9rem;
+  color: var(--text1-op-md);
+}
+
+.text-preset-6 {
+  /*
+    Section-heading
+  */
+  font-family: var(--ff-1);
+  font-size: 1.8rem;
+  @apply text-acc-1;
+}

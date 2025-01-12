@@ -1,0 +1,49 @@
+.packages {
+  display: flex;
+  gap: 16px;
+
+  &__package {
+    background: var(--bg-color-md);
+    border-radius: 16px;
+    
+    width: fit-content;
+    padding: 16px 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px 0;
+  }
+
+  &__label {
+    border-bottom: solid 1px var(--text1-op-md);
+    text-align: center;
+
+    display: flex;
+    align-items: end;
+    gap: 0 8px;
+    color: var(--text1-op-full);
+  }
+
+  &__title {
+    font-family: var(--ff-3);
+    font-size: 1.6rem;
+    color: var(--text1-op-full);
+  }
+
+  &__price {
+    font-family: monospace;
+    font-size: 1.4rem;
+    color: var(--text1-op-full);
+  }
+
+  &__subtitle {
+    font-family: var(--ff-3);
+    font-weight: 600;
+    color: var(--text1-op-full);
+  }
+
+  &__text {
+    font-family: var(--ff-3);
+    color: var(--text1-op-md);
+  }
+}

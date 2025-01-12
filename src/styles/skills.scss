@@ -1,0 +1,22 @@
+.skills {
+  gap: 10px;
+  display: flex;
+
+  &__icon {    
+    &:nth-child(4) {
+      animation-name: spin;
+      animation-duration: 8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
+}
