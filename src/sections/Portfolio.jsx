@@ -31,15 +31,12 @@ const Portfolio = () => {
                     rel="noopener"
                     className="flex-center"
                   >
-                    <img src={item.image} className="" />
+                    <img src={item.image} />
                   </a>
                 </div>
                 <div className="gap-1 flex w- mt-2">
                   {item.tools.map((tool) => (
-                    <span
-                      key={tool.id}
-                      className={`portfolio__skill text-preset-5-md`}
-                    >
+                    <span key={tool.id} className={`portfolio__skill`}>
                       {tool.skill}
                     </span>
                   ))}
@@ -52,15 +49,17 @@ const Portfolio = () => {
           <div className="flex w-full gap-x-4 min-[769px]:hidden">
             <button
               onClick={() => portfolioContainer('left')}
+              onTouchStart={() => portfolioContainer('left')}
               className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
             >
               <img src={icons.left.icon} alt="" width={18} height={18} />
             </button>
             <button
               onClick={() => portfolioContainer('right')}
+              onTouchStart={() => portfolioContainer('right')}
               className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
             >
-              <img src={icons.right.icon} alt="" width={18} height={18} />
+              <img src={icons.right.icon} alt="Swipe" width={18} height={18} />
             </button>
           </div>
         </div>

@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 
 import { christian } from '../assets/images';
-import Skills from './Skills';
 
-const Intro = ({ isDarkMode }) => {
+const Intro = () => {
   return (
     <section id="home" className="section md:flexcol-center max-md:pt-20">
       <div className="section__child md:flex">
@@ -27,7 +26,6 @@ const Intro = ({ isDarkMode }) => {
             <p className="text-preset-2">
               Preferred <b>tech</b> stack:
             </p>
-            <Skills isDarkMode={isDarkMode} />
             <div className="overflow-hidden rounded-full w-[250px] aspect-square max-sm:w-[200px] max-md:mx-auto">
               <img
                 src={christian}

@@ -3,7 +3,6 @@ import { useState } from "react";
 import Nav from "./components/Nav";
 import Intro from "./sections/Intro";
 import Portfolio from './sections/Portfolio';
-import Packages from "./sections/Packages";
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -11,10 +10,9 @@ export default function App() {
 
   return (
     <>
-      <Nav isDarkMode={isDarkMode} toggleTheme={toggleTheme}/>
-      <Intro isDarkMode={isDarkMode}/>
-      <Portfolio/>
-      <Packages isDarkMode={isDarkMode}/>
+      <Nav isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
+      <Intro />
+      <Portfolio />
     </>
   );
 };

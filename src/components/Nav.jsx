@@ -40,27 +40,29 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // Section observer
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      threshold: [0.2, 0.5, 0.8],
-      rootMargin: '-20% 0px -20% 0px',
-    };
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sections = document.querySelectorAll('.section');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-          setActiveSection(entry.target.id);
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          scrollPosition >= sectionTop - 100 &&
+          scrollPosition < sectionTop + sectionHeight - 100
+        ) {
+          setActiveSection(section.id);
         }
       });
-    }, observerOptions);
+    };
 
-    const sections = document.querySelectorAll('.section');
-    sections.forEach((section) => observer.observe(section));
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Initial check on mount
 
-    return () => observer.disconnect();
-  }, []);  
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     adjustPageSpacing();

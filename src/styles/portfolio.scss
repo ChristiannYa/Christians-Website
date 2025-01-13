@@ -65,11 +65,9 @@
   }
 
   &__skill {
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-}
+    font-size: 1rem;
+    font-weight: 500;
 
-#portfolio.section {
-  min-height: fit-content;
+    @apply text-preset-5-md
+  }
 }

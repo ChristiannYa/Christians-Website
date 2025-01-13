@@ -10,7 +10,6 @@
 @tailwind utilities;
 
 @import './styles/nav.scss';
-@import './styles/packages.scss';
 @import './styles/portfolio.scss';
 @import './styles/skills.scss';
 @import './styles/toggleThemeBtn.css';
@@ -41,7 +40,7 @@
   .section {
     min-height: 100vh;
     margin-left: 174px;
-
+    
     &__child {
       width: 100%;
       padding-right: 52px;
