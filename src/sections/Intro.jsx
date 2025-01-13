@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 import { christian } from '../assets/images';
 
 const Intro = () => {
@@ -23,9 +21,6 @@ const Intro = () => {
               Outside of coding, I enjoy playing chess, which enhances my
               thinking and problem-solving skills.
             </p>
-            <p className="text-preset-2">
-              Preferred <b>tech</b> stack:
-            </p>
             <div className="overflow-hidden rounded-full w-[250px] aspect-square max-sm:w-[200px] max-md:mx-auto">
               <img
                 src={christian}
@@ -38,10 +33,6 @@ const Intro = () => {
       </div>
     </section>
   );
-};
-
-Intro.propTypes = {
-  isDarkMode: PropTypes.bool.isRequired,
 };
 
 export default Intro;

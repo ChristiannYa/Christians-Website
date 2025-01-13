@@ -1,5 +1,5 @@
 import { portfolio } from '../constants/portfolio';
-import { icons } from '../assets/icons';
+import { controls } from '../assets/icons';
 
 const Portfolio = () => {
   const portfolioContainer = (direction) => {
@@ -52,14 +52,14 @@ const Portfolio = () => {
               onTouchStart={() => portfolioContainer('left')}
               className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
             >
-              <img src={icons.left.icon} alt="" width={18} height={18} />
+              <img src={controls.left} alt="" width={18} height={18} />
             </button>
             <button
               onClick={() => portfolioContainer('right')}
               onTouchStart={() => portfolioContainer('right')}
               className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
             >
-              <img src={icons.right.icon} alt="Swipe" width={18} height={18} />
+              <img src={controls.right} alt="Swipe" width={18} height={18} />
             </button>
           </div>
         </div>

@@ -33,7 +33,6 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
     document.body.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
 
-  // Window resize listener
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);
@@ -59,7 +58,7 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Initial check on mount
+    handleScroll();
 
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -98,7 +97,9 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
                       : link.icon.icon
                   }
                   alt={link.label}
-                  className="w-8"
+                  className="w-6"
+                  width={18}
+                  height={18}
                 />
               ) : (
                 link.label
