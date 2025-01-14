@@ -1,12 +1,36 @@
-import { icons } from '../assets/icons/index';
+import { skills } from '../assets/icons';
 
-export const skills = [
-  { id: 1, icon: icons.html, label: 'HTML' },
-  { id: 2, icon: icons.css, label: 'CSS' },
-  { id: 3, icon: icons.javascript, label: 'JS' },
-  { id: 4, icon: icons.reactjs, label: 'React' },
-  { id: 5, icon: icons.tailwind, label: 'Tailwind' },
-  { id: 6, icon: icons.sasscss, label: 'Sass' },
-  { id: 7, icon: icons.nodejs, label: 'Node' },
-  { id: 8, icon: icons.postgresql, label: 'PostgreSQL' }
-]
+export const skillsData = [
+  {
+    label: 'CSS',
+    ...skills.css,
+  },
+  {
+    label: 'HTML',
+    ...skills.html,
+  },
+  {
+    label: 'JavaScript',
+    ...skills.js,
+  },
+  {
+    label: 'Node',
+    ...skills.node,
+  },
+  {
+    label: 'PostgreSQL',
+    ...skills.psql,
+  },
+  {
+    label: 'React',
+    ...skills.react,
+  },
+  {
+    label: 'Sass',
+    ...skills.sass,
+  },
+  {
+    label: 'Tailwind',
+    ...skills.tw,
+  },
+];

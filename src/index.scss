@@ -9,9 +9,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './styles/aboutMyWork.scss';
 @import './styles/nav.scss';
 @import './styles/portfolio.scss';
-@import './styles/skills.scss';
 @import './styles/toggleThemeBtn.css';
 @import './styles/typography.scss';
 @import './styles/variables.css';

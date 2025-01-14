@@ -14,7 +14,7 @@ export default function App() {
       <Nav isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Intro />
       <Portfolio />
-      <WhatIDo />
+      <WhatIDo isDarkMode={isDarkMode} />
     </>
   );
 };

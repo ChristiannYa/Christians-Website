@@ -16,7 +16,7 @@ const Portfolio = () => {
     <section id="portfolio" className="section md:flexcol">
       <div className="section__child pt-10">
         <div className="flexcol gap-y-4">
-          <h1 className="text-preset-6">/Portfolio</h1>
+          <h1 className="subheading">/Portfolio</h1>
           <div className="portfolio">
             {portfolio.map((item) => (
               <div key={item.id} className="portfolio__item">
@@ -41,7 +41,7 @@ const Portfolio = () => {
                     </span>
                   ))}
                 </div>
-                <p className="text-preset-4">{item.desc}</p>
+                <p className="paragraph">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -52,14 +52,19 @@ const Portfolio = () => {
               onTouchStart={() => portfolioContainer('left')}
               className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
             >
-              <img src={controls.left} alt="" width={18} height={18} />
+              <img src={controls.left.icon} alt="" width={18} height={18} />
             </button>
             <button
               onClick={() => portfolioContainer('right')}
               onTouchStart={() => portfolioContainer('right')}
               className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
             >
-              <img src={controls.right} alt="Swipe" width={18} height={18} />
+              <img
+                src={controls.right.icon}
+                alt="Swipe"
+                width={18}
+                height={18}
+              />
             </button>
           </div>
         </div>

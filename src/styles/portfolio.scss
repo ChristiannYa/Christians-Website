@@ -38,7 +38,7 @@
     @media (min-width: 769px) {  
       &::after {
         content: '';
-        background: var(--blur-overlay);
+        background: var(--componentBg-1);
         transition: background 0.3s ease;
         width: 100%;
         height: 100%;
@@ -68,6 +68,6 @@
     font-size: 1rem;
     font-weight: 500;
 
-    @apply text-preset-5-md
+    @apply paragraph-md
   }
 }

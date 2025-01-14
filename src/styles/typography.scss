@@ -19,7 +19,7 @@
     Intro paragraph
   */
   font-family: var(--ff-3);
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--text1-op-full);
 }
 
@@ -29,16 +29,16 @@
   */
   font-family: var(--ff-3);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--text1-op-full);
 }
 .text-preset-3-md {
   font-family: var(--ff-3);
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--text1-op-md);
 }
 
-.text-preset-4 {
+.paragraph {
   /*
     Normal paragraphs
   */
@@ -46,30 +46,13 @@
   font-size: 1rem;
   color: var(--text1-op-full);
 }
-.text-preset-4-md {
+.paragraph-md {
   font-family: var(--ff-3);
   font-size: 1rem;
   color: var(--text1-op-md);
 }
 
-.text-preset-5 {
-  /*
-    Tools
-  */
-  font-family: var(--ff-3);
-  font-size: .9rem;
-  color: var(--text1-op-full);
-}
-.text-preset-5-md {
-  /*
-    Tools used
-  */
-  font-family: var(--ff-3);
-  font-size: .9rem;
-  color: var(--text1-op-md);
-}
-
-.text-preset-6 {
+.subheading {
   /*
     Section-heading
   */

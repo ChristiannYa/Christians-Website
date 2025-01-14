@@ -49,8 +49,8 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
         const sectionHeight = section.offsetHeight;
 
         if (
-          scrollPosition >= sectionTop - 100 &&
-          scrollPosition < sectionTop + sectionHeight - 100
+          scrollPosition >= sectionTop - 350 &&
+          scrollPosition < sectionTop + sectionHeight - 350
         ) {
           setActiveSection(section.id);
         }
