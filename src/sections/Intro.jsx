@@ -2,7 +2,10 @@ import { christian } from '../assets/images';
 
 const Intro = () => {
   return (
-    <section id="home" className="section md:flexcol-center max-md:pt-20">
+    <section
+      id="home"
+      className="section md:flexcol-center max-md:pt-20 max-md:min-h-fit"
+    >
       <div className="section__child md:flex">
         <div>
           <h1 className="text-acc-1 font-robot text-4xl mb-1">
@@ -10,12 +13,12 @@ const Intro = () => {
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-2">
             <p className="text-preset-2">
-              <b>Freelance Web Developer</b>.
+              <b>Freelance Front End Web Developer</b>.
             </p>
             <p className="text-preset-2">
-              I believe that great a web design, starts with a focus on{' '}
+              I build websites that are visually engaging, with a focus on{' '}
               <b>simplicity</b> and <b>elegance</b>, ensuring that users can
-              easily navigate and enjoy a smooth, and user-friendly experience.
+              easily navigate and enjoy a smooth, and engaging experience.
             </p>
             <p className="text-preset-2">
               Outside of coding, I enjoy playing chess, which enhances my

@@ -3,6 +3,11 @@ import cssDarkHover from './cssDarkHover-icon.svg';
 import cssLight from './cssLight-icon.svg';
 import cssLightHover from './cssLightHover-icon.svg';
 
+import expressDark from './expressDark-icon.svg';
+import expressDarkHover from './expressDarkHover-icon.svg';
+import expressLight from './expressLight-icon.svg';
+import expressLightHover from './expressLightHover-icon.svg';
+
 import htmlDark from './htmlDark-icon.svg';
 import htmlDarkHover from './htmlDarkHover-icon.svg';
 import htmlLight from './htmlLight-icon.svg';
@@ -44,6 +49,12 @@ export const skills = {
     darkHover: cssDarkHover,
     light: cssLight,
     lightHover: cssLightHover,
+  },
+  express: {
+    dark: expressDark,
+    darkHover: expressDarkHover,
+    light: expressLight,
+    lightHover: expressLightHover,
   },
   html: {
     dark: htmlDark,

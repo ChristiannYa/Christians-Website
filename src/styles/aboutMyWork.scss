@@ -28,10 +28,10 @@
         border-radius: 4px;
   
         width: fit-content;
-        padding: 12px;
+        padding: 12px 16px;
 
         display: flex;
-        gap: 0 8px;
+        gap: 0 14px;
 
         img {
           width: 20px;
@@ -63,6 +63,19 @@
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+
+      &> *:nth-child(7) {
+        animation: spin 8s linear infinite;
+      }
     }
+  }
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
   }
 }

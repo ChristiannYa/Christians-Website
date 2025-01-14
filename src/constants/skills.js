@@ -6,6 +6,10 @@ export const skillsData = [
     ...skills.css,
   },
   {
+    label: 'Express',
+    ...skills.express,
+  },
+  {
     label: 'HTML',
     ...skills.html,
   },

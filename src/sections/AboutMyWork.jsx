@@ -49,20 +49,23 @@ const AboutMyWork = ({ isDarkMode }) => {
   }, []);
 
   return (
-    <section id="whatIDo" className="section">
-      <div className="section__child">
+    <section id="whatIDo" className="section flexcol-center">
+      <div className="section__child pt-10">
         <h1 className="subheading">/About My Work</h1>
 
         <div id="container" className="amw">
           <div className="amw__sectionOne">
             <p className="text-preset-2 py-4">
-              I focus on creating websites that are easy to navigate and
-              visually engaging. My approch emphasizes a clean design and
+              Wether you&apos;re looking for a sleek, responsive design or a
+              user-friendly layout, my approch emphasizes a clean design and
               functionality, making sure that every project delivers a great
-              user experience.
+              user experience. Together we&apos;ll collaborate to transform your
+              ideas into a digital reality.
             </p>
 
-            <h3 className="text-preset-2">I deliver:</h3>
+            <h3 className="text-preset-2">
+              Here is what I offer when creating your website:
+            </h3>
 
             <ul className="uL-parent">
               <li className="paragraph-md uL-child">
@@ -74,12 +77,10 @@ const AboutMyWork = ({ isDarkMode }) => {
               </li>
               <li className="paragraph-md uL-child">
                 <img
-                  src={
-                    isDarkMode ? deliver.devices.light : deliver.devices.dark
-                  }
+                  src={isDarkMode ? deliver.modern.light : deliver.modern.dark}
                   alt=""
                 />
-                User-friendly layouts with a focus on simplicty and elegance.
+                Clean, modern designs focused on usability and a visual appeal.
               </li>
               <li className="paragraph-md uL-child">
                 <img
@@ -105,7 +106,7 @@ const AboutMyWork = ({ isDarkMode }) => {
 
           <aside className="amw__sectionTwo">
             <h3 className="text-preset-2 mb-3 text-center">
-              Favorite <b>Tech Stack</b>
+              <b>Skills</b>
             </h3>
             <div ref={containerRef} className="skillsContainer">
               {skillsData.map((skill, id) => (

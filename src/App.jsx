@@ -10,11 +10,11 @@ export default function App() {
   const toggleTheme = () => setIsDarkMode((prev) => !prev);
 
   return (
-    <>
+    <div className="flexcol">
       <Nav isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
       <Intro />
       <Portfolio />
       <WhatIDo isDarkMode={isDarkMode} />
-    </>
+    </div>
   );
 };
