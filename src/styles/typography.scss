@@ -14,7 +14,7 @@
   }
 }
 
-.text-preset-2 {
+.paragraph-lg {
   /*
     Intro paragraph
   */
@@ -23,7 +23,7 @@
   color: var(--text1-op-full);
 }
 
-.text-preset-3 {
+.title-lg {
   /*
     Portfolio title
   */
@@ -32,7 +32,7 @@
   font-size: 1.25rem;
   color: var(--text1-op-full);
 }
-.text-preset-3-md {
+.title-lg-md {
   font-family: var(--ff-3);
   font-size: 1.2rem;
   color: var(--text1-op-md);
@@ -52,11 +52,31 @@
   color: var(--text1-op-md);
 }
 
+.paragraph-xl {
+  font-family: var(--ff-3);
+  font-size: 1.3rem;
+  color: var(--text1-op-full);
+  font-weight: 500;
+}
+
+.paragraph-xl-md {
+  font-family: var(--ff-3);
+  font-size: 1.3rem;
+  color: var(--text1-op-full);
+  font-weight: 400;
+}
+
 .subheading {
   /*
     Section-heading
   */
   font-family: var(--ff-1);
+  font-size: 1.8rem;
+  @apply text-acc-1;
+}
+
+.subheading-2 {
+  font-family: var(--ff-3);
   font-size: 1.8rem;
   @apply text-acc-1;
 }

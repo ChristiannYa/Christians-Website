@@ -12,60 +12,67 @@ const Portfolio = () => {
     });
   };
 
-  return (
-    <section id="portfolio" className="section md:flexcol">
-      <div className="section__child pt-10">
-        <div className="flexcol gap-y-4">
-          <h1 className="subheading">/Portfolio</h1>
-          <div className="portfolio">
-            {portfolio.map((item) => (
-              <div key={item.id} className="portfolio__item">
-                <div className="flex-col">
-                  <h2 className="text-preset-3">{item.title}</h2>
-                  <p className="text-preset-3-md -mt-1">{item.category}</p>
-                </div>
-                <div className="portfolio__preview">
-                  <a
-                    href={item.link}
-                    target="_blank"
-                    rel="noopener"
-                    className="flex-center"
-                  >
-                    <img src={item.image} />
-                  </a>
-                </div>
-                <div className="gap-1 flex w- mt-2">
-                  {item.tools.map((tool) => (
-                    <span key={tool.id} className={`portfolio__skill`}>
-                      {tool.skill}
-                    </span>
-                  ))}
-                </div>
-                <p className="paragraph">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+  const handleTouchStart = (direction, e) => {
+    e.preventDefault();
+    portfolioContainer(direction);
+  };
 
-          <div className="flex w-full gap-x-4 min-[769px]:hidden">
-            <button
-              onClick={() => portfolioContainer('left')}
-              onTouchStart={() => portfolioContainer('left')}
-              className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
-            >
-              <img src={controls.left.icon} alt="" width={18} height={18} />
-            </button>
-            <button
-              onClick={() => portfolioContainer('right')}
-              onTouchStart={() => portfolioContainer('right')}
-              className="bg-acc-1 text-white p-1 rounded-full w-8 h-8 flexcol-center"
-            >
-              <img
-                src={controls.right.icon}
-                alt="Swipe"
-                width={18}
-                height={18}
-              />
-            </button>
+  return (
+    <section id="portfolio" className="section md:flexcol max-md:min-h-fit">
+      <div className="section__child pt-10">
+        <div className="flexcol gap-y-1">
+          <h1 className="subheading">Portfolio</h1>
+          <div>
+            <div className="portfolio">
+              {portfolio.map((item) => (
+                <div key={item.id} className="portfolio__item">
+                  <div className="flex-col">
+                    <h2 className="title-lg">{item.title}</h2>
+                    <p className="title-lg-md -mt-1">{item.category}</p>
+                  </div>
+                  <div className="portfolio__preview">
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener"
+                      className="flex-center"
+                    >
+                      <img src={item.image} />
+                    </a>
+                  </div>
+                  <div className="gap-1 flex w- mt-2">
+                    {item.tools.map((tool) => (
+                      <span key={tool.id} className={`portfolio__skill`}>
+                        {tool.skill}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="paragraph">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex w-full mt-4 gap-x-4 min-[769px]:hidden">
+              <button
+                onClick={() => portfolioContainer('left')}
+                onTouchStart={(e) => handleTouchStart('left', e)}
+                className="portfolio__ctrlBtn"
+              >
+                <img src={controls.left.icon} alt="" width={18} height={18} />
+              </button>
+              <button
+                onClick={() => portfolioContainer('right')}
+                onTouchStart={(e) => handleTouchStart('right', e)}
+                className="portfolio__ctrlBtn"
+              >
+                <img
+                  src={controls.right.icon}
+                  alt="Swipe"
+                  width={18}
+                  height={18}
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>

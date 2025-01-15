@@ -57,4 +57,18 @@
       }
     }
   }
+
+  .screen800 {
+    width: min(100%, 800px);
+  }
+
+  .componentBg {
+    background: var(--componentBg-2);
+  }
+
+  .portfolio button {
+    border: solid 2px white;
+    // -webkit-tap-highlight-color: transparent;
+    // touch-action: manipulation;
+  }
 }

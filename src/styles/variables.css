@@ -12,7 +12,6 @@
   /* Default colors */
   --acc-1: #b70007;
   --bg-color: #f3f5f5;
-  --bg-color-md: #d8dbe0;
 
   --text1-op-full: #070808;
   --text1-op-md: #07080890;
@@ -27,7 +26,6 @@
 
 [data-theme="dark"] {
   --bg-color: #000000;
-  --bg-color-md: #222;
 
   --text1-op-full: #d4d4d8;
   --text1-op-md: #d4d4d890;

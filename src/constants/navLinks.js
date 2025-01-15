@@ -12,6 +12,12 @@ export const navLinks = [
     id: 3,
     path: '#whatIDo',
     label: 'Work',
-    icon: navigation.aboutMyWork,
+    icon: navigation.about,
+  },
+  {
+    id: 4,
+    path: '#contact',
+    label: 'Contact',
+    icon: navigation.contact,
   },
 ];

@@ -51,19 +51,19 @@ const AboutMyWork = ({ isDarkMode }) => {
   return (
     <section id="whatIDo" className="section flexcol-center">
       <div className="section__child pt-10">
-        <h1 className="subheading">/About My Work</h1>
+        <h1 className="subheading">About My Work</h1>
 
         <div id="container" className="amw">
           <div className="amw__sectionOne">
-            <p className="text-preset-2 py-4">
-              Wether you&apos;re looking for a sleek, responsive design or a
-              user-friendly layout, my approch emphasizes a clean design and
-              functionality, making sure that every project delivers a great
-              user experience. Together we&apos;ll collaborate to transform your
-              ideas into a digital reality.
+            <p className="paragraph-lg pt-1 pb-4">
+              Wether you&apos;re looking for a custom, responsive design or a
+              user-friendly layout, my approch emphasizes a <b>clean</b> and{' '}
+              <b>unique</b> design, making sure that every project delivers a
+              great user experience. Together we&apos;ll collaborate to
+              transform your ideas into a digital reality.
             </p>
 
-            <h3 className="text-preset-2">
+            <h3 className="paragraph-lg">
               Here is what I offer when creating your website:
             </h3>
 
@@ -105,7 +105,7 @@ const AboutMyWork = ({ isDarkMode }) => {
           </div>
 
           <aside className="amw__sectionTwo">
-            <h3 className="text-preset-2 mb-3 text-center">
+            <h3 className="paragraph-lg mb-3 text-center">
               <b>Skills</b>
             </h3>
             <div ref={containerRef} className="skillsContainer">

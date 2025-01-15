@@ -4,7 +4,7 @@ const Intro = () => {
   return (
     <section
       id="home"
-      className="section md:flexcol-center max-md:pt-20 max-md:min-h-fit"
+      className="section md:flexcol-center max-md:pt-20 max-md:min-h-fit max-md:mb-24"
     >
       <div className="section__child md:flex">
         <div>
@@ -12,15 +12,15 @@ const Intro = () => {
             Hi I am christian
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-2">
-            <p className="text-preset-2">
+            <p className="paragraph-lg">
               <b>Freelance Front End Web Developer</b>.
             </p>
-            <p className="text-preset-2">
+            <p className="paragraph-lg">
               I build websites that are visually engaging, with a focus on{' '}
               <b>simplicity</b> and <b>elegance</b>, ensuring that users can
               easily navigate and enjoy a smooth, and engaging experience.
             </p>
-            <p className="text-preset-2">
+            <p className="paragraph-lg">
               Outside of coding, I enjoy playing chess, which enhances my
               thinking and problem-solving skills.
             </p>
