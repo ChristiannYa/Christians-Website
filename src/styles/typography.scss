@@ -63,17 +63,6 @@
   }
 }
 
-.paragraph-xl-md {
-  font-family: var(--ff-3);
-  font-size: 1.3rem;
-  color: var(--text1-op-full);
-  font-weight: 400;
-
-  @media (max-width: 768px) {
-    font-size: 1.2rem;
-  }
-}
-
 .subheading {
   /*
     Section-heading

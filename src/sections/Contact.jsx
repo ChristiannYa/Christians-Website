@@ -19,20 +19,17 @@ const Contact = ({ isDarkMode }) => {
   };
 
   return (
-    <div id="contact" className="section min-h-fit pt-6 pb-8 max-md:pt-20">
+    <div id="contact" className="section min-h-fit pt-14 pb-8 max-md:pt-20">
       <div className="section__child">
         <div className="screen800 componentBg p-4 rounded-lg">
           <h2 className="subheading-2 font-semibold">Like What You See?</h2>
           <p className="paragraph-xl">
-            If you&apos;ve enjoyed exploring my work and think we could build a
-            great website together, feel free to reach me out! I&apos;ve linked
-            my email below.
-            <br />
-            I&apos;d love to hear about your ideas and how I can help bring them
-            to life.
+            If you&apos;ve enjoyed exploring my work, you&apos;ll find my email
+            below if you&apos;d like to reach out. I&apos;d love to hear about
+            your ideas and how I can help you bring them to life.
           </p>
           <div className="flex items-center flex-wrap gap-x-4">
-            <p id="email" className="paragraph-xl-md mt-1">
+            <p id="email" className="paragraph-xl mt-1">
               chris.lopez.webdev@gmail.com
             </p>
             <button
@@ -74,8 +71,8 @@ const Contact = ({ isDarkMode }) => {
 
         <div className="flex flex-col pt-8 px-4 gap-1">
           <p className="paragraph-lg">
-            @{startYear}
-            {currentYear > startYear && ` - @${currentYear}`}
+            ©{startYear}
+            {currentYear > startYear && ` - ©${currentYear}`}
           </p>
           <p className="paragraph-lg">Chriswebdev</p>
           <p className="paragraph-lg">All rights reserved</p>

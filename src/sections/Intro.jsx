@@ -21,8 +21,8 @@ const Intro = () => {
               easily navigate and enjoy a smooth, and engaging experience.
             </p>
             <p className="paragraph-lg">
-              Outside of coding, I enjoy playing chess, which enhances my
-              thinking and problem-solving skills.
+              Outside of building websites, I enjoy to play chess, and watch
+              t.v.
             </p>
             <div className="overflow-hidden rounded-full w-[250px] aspect-square max-sm:w-[200px] max-md:mx-auto">
               <img

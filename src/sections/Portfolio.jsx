@@ -18,7 +18,10 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="section md:flexcol-center">
+    <section
+      id="portfolio"
+      className="section md:flexcol-center max-md:min-h-fit max-md:pb-6"
+    >
       <div className="section__child pt-10">
         <div className="flexcol gap-y-1">
           <h1 className="subheading">Portfolio</h1>
@@ -37,7 +40,7 @@ const Portfolio = () => {
                       rel="noopener"
                       className="flex-center"
                     >
-                      <img src={item.image} />
+                      <img src={item.image} loading="lazy" />
                     </a>
                   </div>
                   <div className="gap-1 flex w- mt-2">
