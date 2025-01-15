@@ -49,7 +49,10 @@ const AboutMyWork = ({ isDarkMode }) => {
   }, []);
 
   return (
-    <section id="whatIDo" className="section flexcol-center">
+    <section
+      id="whatIDo"
+      className="section md:flexcol-center max-md:min-h-fit"
+    >
       <div className="section__child pt-10">
         <h1 className="subheading">About My Work</h1>
 

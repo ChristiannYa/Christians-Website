@@ -5,8 +5,8 @@ import { miscellaneous } from '../assets/icons';
 
 const Contact = ({ isDarkMode }) => {
   const [copied, setCopied] = useState(false);
-  const startYear = 2024; // Static start year
-  const currentYear = new Date().getFullYear(); // Dynamic current year
+  const startYear = 2024;
+  const currentYear = new Date().getFullYear();
 
   const handleCopy = () => {
     const email = document.querySelector('#email').textContent;
@@ -19,19 +19,19 @@ const Contact = ({ isDarkMode }) => {
   };
 
   return (
-    <div id="contact" className="section min-h-fit pt-5 pb-8">
+    <div id="contact" className="section min-h-fit pt-6 pb-8 max-md:pt-20">
       <div className="section__child">
         <div className="screen800 componentBg p-4 rounded-lg">
           <h2 className="subheading-2 font-semibold">Like What You See?</h2>
           <p className="paragraph-xl">
             If you&apos;ve enjoyed exploring my work and think we could build a
-            great website together, feel free to reach out! I&apos;ve linked my
-            email below.
+            great website together, feel free to reach me out! I&apos;ve linked
+            my email below.
             <br />
             I&apos;d love to hear about your ideas and how I can help bring them
             to life.
           </p>
-          <div className="flex items-center gap-x-4">
+          <div className="flex items-center flex-wrap gap-x-4">
             <p id="email" className="paragraph-xl-md mt-1">
               chris.lopez.webdev@gmail.com
             </p>

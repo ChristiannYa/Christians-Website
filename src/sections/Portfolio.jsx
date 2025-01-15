@@ -4,7 +4,7 @@ import { controls } from '../assets/icons';
 const Portfolio = () => {
   const portfolioContainer = (direction) => {
     const container = document.querySelector('.portfolio');
-    const scrollDistance = 500;
+    const scrollDistance = window.innerWidth < 768 ? 300 : 500;
 
     container.scrollBy({
       left: direction === 'left' ? -scrollDistance : scrollDistance,
@@ -18,7 +18,7 @@ const Portfolio = () => {
   };
 
   return (
-    <section id="portfolio" className="section md:flexcol max-md:min-h-fit">
+    <section id="portfolio" className="section md:flexcol-center">
       <div className="section__child pt-10">
         <div className="flexcol gap-y-1">
           <h1 className="subheading">Portfolio</h1>
