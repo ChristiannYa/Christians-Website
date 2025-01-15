@@ -18,7 +18,7 @@ const Intro = () => {
             <p className="paragraph-lg">
               I build websites that are visually engaging, with a focus on{' '}
               <b>simplicity</b> and <b>elegance</b>, ensuring that users can
-              easily navigate and enjoy a smooth, and engaging experience.
+              easily navigate and enjoy a smooth experience.
             </p>
             <p className="paragraph-lg">
               Outside of building websites, I enjoy to play chess, and watch
