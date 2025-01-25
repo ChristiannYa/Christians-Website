@@ -13,7 +13,7 @@ const Intro = () => {
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-2">
             <p className="paragraph-lg">
-              <b>Freelance Front End Web Developer</b>.
+              <b>Front End Web Developer</b>.
             </p>
             <p className="paragraph-lg">
               I build websites that are visually engaging, with a focus on{' '}
