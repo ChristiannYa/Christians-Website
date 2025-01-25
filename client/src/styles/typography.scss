@@ -1,0 +1,79 @@
+.text-preset-1 {
+  /* 
+    Nav anchor tags
+  */
+  font-family: var(--ff-3);
+  font-weight: 600;
+  color: var(--link-color);
+  text-align: center;
+
+  @media (min-width: 768px) {
+    &:hover {
+      color: var(--hover-link-color);
+    }
+  }
+}
+
+.paragraph-lg {
+  /*
+    Intro paragraph
+  */
+  font-family: var(--ff-3);
+  font-size: 1.2rem;
+  color: var(--text1-op-full);
+}
+
+.title-lg {
+  /*
+    Portfolio title
+  */
+  font-family: var(--ff-3);
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--text1-op-full);
+}
+.title-lg-md {
+  font-family: var(--ff-3);
+  font-size: 1.2rem;
+  color: var(--text1-op-md);
+}
+
+.paragraph {
+  /*
+    Normal paragraphs
+  */
+  font-family: var(--ff-3);
+  font-size: 1rem;
+  color: var(--text1-op-full);
+}
+.paragraph-md {
+  font-family: var(--ff-3);
+  font-size: 1rem;
+  color: var(--text1-op-md);
+}
+
+.paragraph-xl {
+  font-family: var(--ff-3);
+  font-size: 1.3rem;
+  color: var(--text1-op-full);
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
+}
+
+.subheading {
+  /*
+    Section-heading
+  */
+  font-family: var(--ff-1);
+  font-size: 1.8rem;
+  @apply text-acc-1;
+}
+
+.subheading-2 {
+  font-family: var(--ff-3);
+  font-size: 1.6rem;
+  @apply text-acc-1;
+}
