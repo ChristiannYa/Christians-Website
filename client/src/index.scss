@@ -12,6 +12,7 @@
 @import './styles/aboutMyWork.scss';
 @import './styles/nav.scss';
 @import './styles/portfolio.scss';
+@import './styles/scrollDownButton.css';
 @import './styles/toggleThemeBtn.css';
 @import './styles/typography.scss';
 @import './styles/variables.css';
@@ -68,7 +69,5 @@
 
   .portfolio button {
     border: solid 2px white;
-    // -webkit-tap-highlight-color: transparent;
-    // touch-action: manipulation;
   }
 }
