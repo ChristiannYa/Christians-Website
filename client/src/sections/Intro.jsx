@@ -2,6 +2,13 @@ import { christian } from '../assets/images';
 import ScrollDownMouse from '../components/ScrollDownMouse';
 
 const Intro = () => {
+  const handleScrollDown = () => {
+    const nextSection = document.getElementById('portfolio');
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section
       id="home"
@@ -24,7 +31,7 @@ const Intro = () => {
             <p className="paragraph-lg">
               Outside of building websites, I like to play chess, and watch t.v.
             </p>
-            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-10 max-md:mx-auto">
+            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-4 max-md:mx-auto">
               <img
                 src={christian}
                 alt="Christian photo"
@@ -34,7 +41,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="wh-full self-center justify-self-center">
-          <ScrollDownMouse />
+          <ScrollDownMouse onClick={handleScrollDown} />
         </div>
       </div>
     </section>

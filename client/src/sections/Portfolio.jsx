@@ -19,7 +19,7 @@ const Portfolio = () => {
 
   return (
     <section
-      id="portfolio"
+      id="portfolio" // Ensure this ID matches the one used in handleScrollDown
       className="section md:flexcol-center max-md:min-h-fit max-md:pb-6"
     >
       <div className="section__child pt-10">
