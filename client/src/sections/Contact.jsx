@@ -28,12 +28,12 @@ const Contact = ({ isDarkMode }) => {
             information, you&apos;ll find my email below. I&apos;d love to hear
             about your ideas and how I can help you bring them to life.
           </p>
-          <div className="flex items-center flex-wrap gap-x-4">
+          <div className="flex items-center flex-wrap gap-x-2">
             <p id="email" className="paragraph-xl mt-1">
               chris.lopez.webdev@gmail.com
             </p>
             <button
-              className="flex-center w-6 h-6 relative"
+              className="flex-center w-[17px] h-[17px] relative"
               onClick={handleCopy}
               aria-label="copy-email"
             >
@@ -45,9 +45,8 @@ const Contact = ({ isDarkMode }) => {
                       : miscellaneous.copy.dark
                   }
                   alt="Copy email"
-                  className="wh-full"
-                  width={18}
-                  height={18}
+                  width={17}
+                  height={17}
                 />
               )}
               {copied && (
@@ -59,9 +58,8 @@ const Contact = ({ isDarkMode }) => {
                         : miscellaneous.checkMark.dark
                     }
                     alt="Copied"
-                    className="wh-full"
-                    width={18}
-                    height={18}
+                    width={17}
+                    height={17}
                   />
                 </div>
               )}
@@ -69,7 +67,7 @@ const Contact = ({ isDarkMode }) => {
           </div>
         </div>
 
-        <div className="flex flex-col pt-8 px-4 gap-1">
+        <div className="flex flex-col pt-10 px-4 gap-1">
           <p className="paragraph-lg">
             ©{startYear}
             {currentYear > startYear && ` - ©${currentYear}`}

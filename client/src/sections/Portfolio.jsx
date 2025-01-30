@@ -43,7 +43,7 @@ const Portfolio = () => {
                       <img src={item.image} loading="lazy" />
                     </a>
                   </div>
-                  <div className="gap-1 flex w- mt-2">
+                  <div className="gap-x-1 flex flex-wrap mt-1">
                     {item.tools.map((tool) => (
                       <span key={tool.id} className={`portfolio__skill`}>
                         {tool.skill}

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const ScrollDownMouse = ({ onClick }) => {
   return (
     <div className="w-full h-full flex-center" onClick={onClick}>
@@ -9,6 +11,10 @@ const ScrollDownMouse = ({ onClick }) => {
       </div>
     </div>
   );
+};
+
+ScrollDownMouse.propTypes = {
+  onClick: PropTypes.func,
 };
 
 export default ScrollDownMouse;

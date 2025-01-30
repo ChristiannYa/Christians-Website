@@ -54,7 +54,12 @@
 
   &__link {
     @apply text-preset-1;
+    width: 67px;
     transition: color 0.2s ease;
+
+    @media (max-width: 768px) {
+      width: fit-content;
+    }
 
     &.active {
       color: var(--hover-link-active);
