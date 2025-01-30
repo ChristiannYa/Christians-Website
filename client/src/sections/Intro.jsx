@@ -31,7 +31,7 @@ const Intro = () => {
             <p className="paragraph-lg">
               Outside of building websites, I like to play chess, and watch t.v.
             </p>
-            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-4 max-md:mx-auto">
+            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-6 max-md:mx-auto">
               <img
                 src={christian}
                 alt="Christian photo"
