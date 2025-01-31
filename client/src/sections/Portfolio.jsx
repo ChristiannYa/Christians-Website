@@ -1,25 +1,32 @@
+import { useState } from 'react';
+
 import { portfolio } from '../constants/portfolio';
 import { controls } from '../assets/icons';
 
 const Portfolio = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
   const portfolioContainer = (direction) => {
     const container = document.querySelector('.portfolio');
-    const scrollDistance = window.innerWidth < 768 ? 300 : 500;
+    const itemWidth = container.querySelector('.portfolio__item').offsetWidth;
+    const totalItems = portfolio.length;
 
-    container.scrollBy({
-      left: direction === 'left' ? -scrollDistance : scrollDistance,
+    let newIndex;
+    if (direction === 'right') {
+      newIndex = currentIndex === totalItems - 1 ? 0 : currentIndex + 1;
+    } else {
+      newIndex = currentIndex === 0 ? totalItems - 1 : currentIndex - 1;
+    }
+
+    setCurrentIndex(newIndex);
+    container.scrollTo({
+      left: newIndex * itemWidth,
       behavior: 'smooth',
     });
   };
-
-  const handleTouchStart = (direction, e) => {
-    e.preventDefault();
-    portfolioContainer(direction);
-  };
-
   return (
     <section
-      id="portfolio" // Ensure this ID matches the one used in handleScrollDown
+      id="portfolio"
       className="section md:flexcol-center max-md:min-h-fit max-md:pb-6"
     >
       <div className="section__child pt-10">
@@ -58,14 +65,13 @@ const Portfolio = () => {
             <div className="flex w-full mt-4 gap-x-4 min-[769px]:hidden">
               <button
                 onClick={() => portfolioContainer('left')}
-                onTouchStart={(e) => handleTouchStart('left', e)}
                 className="portfolio__ctrlBtn"
               >
                 <img src={controls.left.icon} alt="" width={18} height={18} />
               </button>
+
               <button
                 onClick={() => portfolioContainer('right')}
-                onTouchStart={(e) => handleTouchStart('right', e)}
                 className="portfolio__ctrlBtn"
               >
                 <img
