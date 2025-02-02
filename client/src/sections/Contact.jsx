@@ -14,7 +14,7 @@ const Contact = ({ isDarkMode }) => {
     navigator.clipboard.writeText(email).then(() => {
       setCopied(true);
 
-      setTimeout(() => setCopied(false), 5000);
+      setTimeout(() => setCopied(false), 2000);
     });
   };
 
@@ -28,7 +28,7 @@ const Contact = ({ isDarkMode }) => {
             information, you&apos;ll find my email below. I&apos;d love to hear
             about your ideas and how I can help you bring them to life.
           </p>
-          <div className="flex items-center flex-wrap gap-x-2">
+          <div className="flex items-center flex-wrap gap-x-2 mt-1">
             <p id="email" className="paragraph-xl mt-1">
               chris.lopez.webdev@gmail.com
             </p>
@@ -67,7 +67,7 @@ const Contact = ({ isDarkMode }) => {
           </div>
         </div>
 
-        <div className="flex flex-col pt-10 px-4 gap-1">
+        <div className="flex flex-col pt-10 px-4">
           <p className="paragraph-lg">
             ©{startYear}
             {currentYear > startYear && ` - ©${currentYear}`}
