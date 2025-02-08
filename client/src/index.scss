@@ -17,6 +17,10 @@
 @import './styles/typography.scss';
 @import './styles/variables.css';
 
+html {
+  color-scheme: light dark;
+}
+
 @layer components {
   .wh-fit {
     @apply w-fit h-fit;
@@ -41,7 +45,7 @@
   .section {
     min-height: 100vh;
     margin-left: 174px;
-    
+
     &__child {
       width: 100%;
       padding-right: 52px;

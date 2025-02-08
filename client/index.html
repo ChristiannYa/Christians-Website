@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      (() => {
+        const prefersDark = window.matchMedia(
+          '(prefers-color-scheme: dark)'
+        ).matches;
+        document
+          .querySelector('html')
+          .setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+      })();
+    </script>
+
     <meta charset="UTF-8" />
 
     <!-- HTML Meta Tags -->
