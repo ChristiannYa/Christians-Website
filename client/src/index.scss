@@ -17,10 +17,6 @@
 @import './styles/typography.scss';
 @import './styles/variables.css';
 
-html {
-  color-scheme: light dark;
-}
-
 @layer components {
   .wh-fit {
     @apply w-fit h-fit;
