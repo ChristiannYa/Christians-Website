@@ -28,7 +28,7 @@ const Contact = ({ isDarkMode }) => {
             information, you&apos;ll find my email below. I&apos;d love to hear
             about your ideas and how I can help you bring them to life.
           </p>
-          <div className="flex items-center flex-wrap gap-x-2 mt-1">
+          <div className="flex items-center flex-wrap gap-x-2 mt-1 w-fit">
             <p id="email" className="paragraph-xl mt-1">
               chris.lopez.webdev@gmail.com
             </p>

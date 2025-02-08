@@ -40,6 +40,13 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
   }, []);
 
   useEffect(() => {
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+    document.body.setAttribute('data-theme', prefersDark ? 'dark' : 'light');
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const sections = document.querySelectorAll('.section');
@@ -49,8 +56,8 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
         const sectionHeight = section.offsetHeight;
 
         if (
-          scrollPosition >= sectionTop - 350 &&
-          scrollPosition < sectionTop + sectionHeight - 350
+          scrollPosition >= sectionTop - 360 &&
+          scrollPosition < sectionTop + sectionHeight - 360
         ) {
           setActiveSection(section.id);
         }
