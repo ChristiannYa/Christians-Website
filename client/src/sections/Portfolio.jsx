@@ -1,5 +1,4 @@
-import { useRef, useState } from 'react';
-
+import { useRef, useState, useCallback } from 'react';
 import { portfolio } from '../constants/portfolio';
 import { controls } from '../assets/icons';
 
@@ -7,27 +6,28 @@ const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef(null);
 
-  const portfolioContainer = (direction) => {
-    const itemWidth =
-      containerRef.current.querySelector('.portfolio__item').offsetWidth;
+  const calculateNewIndex = (direction, currentIndex, totalItems) => {
+    if (direction === 'right') {
+      return currentIndex === totalItems - 1 ? 0 : currentIndex + 1;
+    } else {
+      return currentIndex === 0 ? totalItems - 1 : currentIndex - 1;
+    }
+  };
+
+  const handleScroll = useCallback((direction) => {
+    if (!containerRef.current) return;
+
+    const itemWidth = containerRef.current.querySelector('.portfolio__item').offsetWidth;
     const totalItems = portfolio.length;
 
-    const newIndex =
-      direction === 'right'
-        ? currentIndex === totalItems - 1
-          ? 0
-          : currentIndex + 1
-        : currentIndex === 0
-        ? totalItems - 1
-        : currentIndex - 1;
-
+    const newIndex = calculateNewIndex(direction, currentIndex, totalItems);
     setCurrentIndex(newIndex);
 
     containerRef.current.scrollTo({
       left: newIndex * itemWidth,
       behavior: 'smooth',
     });
-  };
+  }, [currentIndex]);
 
   return (
     <section
@@ -49,15 +49,15 @@ const Portfolio = () => {
                     <a
                       href={item.link}
                       target="_blank"
-                      rel="noopener"
+                      rel="noopener noreferrer"
                       className="flex-center"
                     >
-                      <img src={item.image} loading="lazy" />
+                      <img src={item.image} alt={item.title} loading="lazy" />
                     </a>
                   </div>
                   <div className="gap-x-1 flex flex-wrap mt-1">
                     {item.tools.map((tool) => (
-                      <span key={tool.id} className={`portfolio__skill`}>
+                      <span key={tool.id} className="portfolio__skill">
                         {tool.skill}
                       </span>
                     ))}
@@ -69,22 +69,18 @@ const Portfolio = () => {
 
             <div className="flex w-full mt-4 gap-x-4 min-[769px]:hidden">
               <button
-                onClick={() => portfolioContainer('left')}
+                onClick={() => handleScroll('left')}
                 className="portfolio__ctrlBtn"
+                aria-label="Previous item"
               >
-                <img src={controls.left.icon} alt="" width={18} height={18} />
+                <img src={controls.left.icon} alt="Previous" width={18} height={18} />
               </button>
-
               <button
-                onClick={() => portfolioContainer('right')}
+                onClick={() => handleScroll('right')}
                 className="portfolio__ctrlBtn"
+                aria-label="Next item"
               >
-                <img
-                  src={controls.right.icon}
-                  alt="Swipe"
-                  width={18}
-                  height={18}
-                />
+                <img src={controls.right.icon} alt="Next" width={18} height={18} />
               </button>
             </div>
           </div>
