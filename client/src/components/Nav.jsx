@@ -84,27 +84,25 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
                 activeSection === link.path.replace('#', '') ? 'active' : ''
               }`}
             >
-              {
-                <span className="link-icon">
-                  <img
-                    src={
-                      activeSection === link.path.replace('#', '') &&
-                      link.icon.active
-                        ? link.icon.active
-                        : link.icon.hasTheme
-                        ? isDarkMode
-                          ? link.icon.light
-                          : link.icon.dark
-                        : link.icon.icon
-                    }
-                    alt={link.label}
-                    className="w-6"
-                    width={18}
-                    height={18}
-                  />
-                </span>
-              }
-              {<span className="topnav__link-content">{link.label}</span>}
+              <span className="min-[768px]:hidden">
+                <img
+                  src={
+                    activeSection === link.path.replace('#', '') &&
+                    link.icon.active
+                      ? link.icon.active
+                      : link.icon.hasTheme
+                      ? isDarkMode
+                        ? link.icon.light
+                        : link.icon.dark
+                      : link.icon.icon
+                  }
+                  alt={link.label}
+                  className="w-6"
+                  width={18}
+                  height={18}
+                />
+              </span>
+              <span className="max-[768px]:hidden">{link.label}</span>
             </a>
           ))}
         </nav>

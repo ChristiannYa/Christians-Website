@@ -44,7 +44,7 @@ const Portfolio = () => {
           <div className="relative">
             <aside className="w-full flex justify-end items-center absolute top-0 right-0 min-[768px]:hidden">
               <div className="bg-acc-1 rounded-xl px-2 py-1">
-                <p className="text-xs font-nunito">
+                <p className="text-white text-xs font-nunito">
                   {currentIndex + 1}/{portfolio.length}
                 </p>
               </div>

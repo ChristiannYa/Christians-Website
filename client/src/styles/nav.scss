@@ -66,22 +66,4 @@
       font-weight: bold;
     }
   }
-
-  .link-icon {
-    @media (min-width: 768px) {
-      display: none;
-    }
-    @media (max-width: 768px) {
-      display: block;
-    }
-  }
-
-  &__link-content {
-    @media (min-width: 768px) {
-      display: block;
-    }
-    @media (max-width: 768px) {
-      display: none;
-    }
-  }
 }
