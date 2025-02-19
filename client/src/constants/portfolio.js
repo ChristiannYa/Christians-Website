@@ -15,7 +15,7 @@ export const portfolio = [
       { id: 5, skill: 'Sass', icon: skills.sass },
       { id: 6, skill: 'Tailwind', icon: skills.tw },
     ],
-    desc: 'Full-Stack Restaurant website featuring dynamic routing for individual menu items, PostgreSQL database integration with Railway deployment, and secure admin authentication system to add, delete, and edit menu items.',
+    desc: 'Full-Stack Restaurant website featuring dynamic routing for individual menu items, PostgreSQL database integration with Render deployment, and secure admin authentication system to add, delete, and edit menu items.',
     link: 'https://bloom-bistro.netlify.app/',
   },
   {
