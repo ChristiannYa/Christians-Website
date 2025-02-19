@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback } from 'react';
+import { useRef, useState, useCallback, useEffect } from 'react';
 import { portfolio } from '../constants/portfolio';
 import { controls } from '../assets/icons';
 
@@ -32,6 +32,25 @@ const Portfolio = () => {
     },
     [currentIndex]
   );
+
+  const handleScrollChange = useCallback(() => {
+    if (!containerRef.current) return;
+
+    const container = containerRef.current;
+    const itemWidth = container.querySelector('.portfolio__item').offsetWidth;
+    const scrollPosition = container.scrollLeft;
+
+    const newIndex = Math.round(scrollPosition / itemWidth);
+    setCurrentIndex(newIndex);
+  }, []);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+
+    container.addEventListener('scroll', handleScrollChange);
+    return () => container.removeEventListener('scroll', handleScrollChange);
+  }, [handleScrollChange]);
 
   return (
     <section
