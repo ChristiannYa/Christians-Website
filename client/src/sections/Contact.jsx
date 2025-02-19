@@ -67,7 +67,7 @@ const Contact = ({ isDarkMode }) => {
           </div>
         </div>
 
-        <div className="flex flex-col pt-10 px-4">
+        <div className="flex flex-col mt-12 bg-slate-900 px-4">
           <p className="paragraph-lg">
             ©{startYear}
             {currentYear > startYear && ` - ©${currentYear}`}
