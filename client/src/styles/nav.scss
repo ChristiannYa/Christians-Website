@@ -23,7 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+
     @media (max-width: 768px) {
       background: var(--componentBg-2);
       backdrop-filter: blur(2.5px);
@@ -63,7 +63,25 @@
 
     &.active {
       color: var(--hover-link-active);
-      font-weight: bold; 
+      font-weight: bold;
+    }
+  }
+
+  .link-icon {
+    @media (min-width: 768px) {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__link-content {
+    @media (min-width: 768px) {
+      display: block;
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }

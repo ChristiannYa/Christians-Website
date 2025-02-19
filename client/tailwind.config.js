@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         robot: ['MR ROBOT', 'monospace'],
         albertSans: ['Albert Sans', 'serif'],
+        nunito: ['Nunito', 'serif'],
       },
     },
   },

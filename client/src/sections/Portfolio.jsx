@@ -14,20 +14,24 @@ const Portfolio = () => {
     }
   };
 
-  const handleScroll = useCallback((direction) => {
-    if (!containerRef.current) return;
+  const handleScroll = useCallback(
+    (direction) => {
+      if (!containerRef.current) return;
 
-    const itemWidth = containerRef.current.querySelector('.portfolio__item').offsetWidth;
-    const totalItems = portfolio.length;
+      const itemWidth =
+        containerRef.current.querySelector('.portfolio__item').offsetWidth;
+      const totalItems = portfolio.length;
 
-    const newIndex = calculateNewIndex(direction, currentIndex, totalItems);
-    setCurrentIndex(newIndex);
+      const newIndex = calculateNewIndex(direction, currentIndex, totalItems);
+      setCurrentIndex(newIndex);
 
-    containerRef.current.scrollTo({
-      left: newIndex * itemWidth,
-      behavior: 'smooth',
-    });
-  }, [currentIndex]);
+      containerRef.current.scrollTo({
+        left: newIndex * itemWidth,
+        behavior: 'smooth',
+      });
+    },
+    [currentIndex]
+  );
 
   return (
     <section
@@ -37,7 +41,14 @@ const Portfolio = () => {
       <div className="section__child pt-10">
         <div className="flexcol gap-y-1">
           <h1 className="subheading">Portfolio</h1>
-          <div>
+          <div className="relative">
+            <aside className="w-full flex justify-end items-center absolute top-0 right-0 min-[768px]:hidden">
+              <div className="bg-acc-1 rounded-xl px-2 py-1">
+                <p className="text-xs font-nunito">
+                  {currentIndex + 1}/{portfolio.length}
+                </p>
+              </div>
+            </aside>
             <div className="portfolio" ref={containerRef}>
               {portfolio.map((item) => (
                 <div key={item.id} className="portfolio__item">
@@ -67,20 +78,30 @@ const Portfolio = () => {
               ))}
             </div>
 
-            <div className="flex w-full mt-4 gap-x-4 min-[769px]:hidden">
+            <div className="flex w-full mt-4 gap-x-4 min-[768px]:hidden">
               <button
                 onClick={() => handleScroll('left')}
                 className="portfolio__ctrlBtn"
                 aria-label="Previous item"
               >
-                <img src={controls.left.icon} alt="Previous" width={18} height={18} />
+                <img
+                  src={controls.left.icon}
+                  alt="Previous"
+                  width={18}
+                  height={18}
+                />
               </button>
               <button
                 onClick={() => handleScroll('right')}
                 className="portfolio__ctrlBtn"
                 aria-label="Next item"
               >
-                <img src={controls.right.icon} alt="Next" width={18} height={18} />
+                <img
+                  src={controls.right.icon}
+                  alt="Next"
+                  width={18}
+                  height={18}
+                />
               </button>
             </div>
           </div>

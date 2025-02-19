@@ -5,7 +5,6 @@ import { navLinks } from '../constants/navLinks';
 import ToggleThemeBtn from './ToggleThemeBtn';
 
 const Nav = ({ isDarkMode, toggleTheme }) => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [activeSection, setActiveSection] = useState(null);
 
   const adjustPageSpacing = () => {
@@ -32,12 +31,6 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
   useEffect(() => {
     document.body.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
   }, [isDarkMode]);
-
-  useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   useEffect(() => {
     const prefersDark = window.matchMedia(
@@ -91,26 +84,27 @@ const Nav = ({ isDarkMode, toggleTheme }) => {
                 activeSection === link.path.replace('#', '') ? 'active' : ''
               }`}
             >
-              {windowWidth <= 768 ? (
-                <img
-                  src={
-                    activeSection === link.path.replace('#', '') &&
-                    link.icon.active
-                      ? link.icon.active
-                      : link.icon.hasTheme
-                      ? isDarkMode
-                        ? link.icon.light
-                        : link.icon.dark
-                      : link.icon.icon
-                  }
-                  alt={link.label}
-                  className="w-6"
-                  width={18}
-                  height={18}
-                />
-              ) : (
-                link.label
-              )}
+              {
+                <span className="link-icon">
+                  <img
+                    src={
+                      activeSection === link.path.replace('#', '') &&
+                      link.icon.active
+                        ? link.icon.active
+                        : link.icon.hasTheme
+                        ? isDarkMode
+                          ? link.icon.light
+                          : link.icon.dark
+                        : link.icon.icon
+                    }
+                    alt={link.label}
+                    className="w-6"
+                    width={18}
+                    height={18}
+                  />
+                </span>
+              }
+              {<span className="topnav__link-content">{link.label}</span>}
             </a>
           ))}
         </nav>
