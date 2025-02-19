@@ -23,7 +23,6 @@ const Portfolio = () => {
       const totalItems = portfolio.length;
 
       const newIndex = calculateNewIndex(direction, currentIndex, totalItems);
-      setCurrentIndex(newIndex);
 
       containerRef.current.scrollTo({
         left: newIndex * itemWidth,
