@@ -1,29 +1,34 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import { portfolio } from '../constants/portfolio';
 import { controls } from '../assets/icons';
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const containerRef = useRef(null);
 
   const portfolioContainer = (direction) => {
-    const container = document.querySelector('.portfolio');
-    const itemWidth = container.querySelector('.portfolio__item').offsetWidth;
+    const itemWidth =
+      containerRef.current.querySelector('.portfolio__item').offsetWidth;
     const totalItems = portfolio.length;
 
-    let newIndex;
-    if (direction === 'right') {
-      newIndex = currentIndex === totalItems - 1 ? 0 : currentIndex + 1;
-    } else {
-      newIndex = currentIndex === 0 ? totalItems - 1 : currentIndex - 1;
-    }
+    const newIndex =
+      direction === 'right'
+        ? currentIndex === totalItems - 1
+          ? 0
+          : currentIndex + 1
+        : currentIndex === 0
+        ? totalItems - 1
+        : currentIndex - 1;
 
     setCurrentIndex(newIndex);
-    container.scrollTo({
+
+    containerRef.current.scrollTo({
       left: newIndex * itemWidth,
       behavior: 'smooth',
     });
   };
+
   return (
     <section
       id="portfolio"
@@ -33,7 +38,7 @@ const Portfolio = () => {
         <div className="flexcol gap-y-1">
           <h1 className="subheading">Portfolio</h1>
           <div>
-            <div className="portfolio">
+            <div className="portfolio" ref={containerRef}>
               {portfolio.map((item) => (
                 <div key={item.id} className="portfolio__item">
                   <div className="flex-col">

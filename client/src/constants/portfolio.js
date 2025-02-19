@@ -28,7 +28,7 @@ export const portfolio = [
       { id: 2, skill: 'Sass', icon: skills.sass },
       { id: 3, skill: 'Tailwind', icon: skills.tw },
     ],
-    desc: 'I developed this nike template with the guidance of Adrian from the "JavaScript Mastery" YouTube Channel for an introduction to Tailwind CSS. Plus, I added a simple navigation menu, and simple animations.',
+    desc: 'I developed this nike template with the guidance of Adrian from the "JavaScript Mastery" YouTube Channel as an introduction to Tailwind CSS. Also, I added simple animations and a navigation menu.',
     link: 'https://niketemplate.netlify.app/',
   },
   {
