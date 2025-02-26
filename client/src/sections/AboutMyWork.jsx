@@ -4,7 +4,7 @@ import gsap from 'gsap';
 
 import { skillsData } from '../constants/skills';
 import SkillIcon from '../components/SkillIcon';
-import { deliver } from '../assets/icons';
+import { deliverItems } from '../constants/deliver';
 
 const AboutMyWork = ({ isDarkMode }) => {
   const containerRef = useRef(null);
@@ -59,11 +59,13 @@ const AboutMyWork = ({ isDarkMode }) => {
         <div id="container" className="amw">
           <div className="amw__sectionOne">
             <p className="paragraph-lg pt-1 pb-4">
-              Wether you&apos;re looking for a custom, responsive design or a
-              user-friendly layout, my approch emphasizes a <b>clean</b> and{' '}
-              <b>unique</b> design, making sure that every project delivers a
-              great user experience. Together we&apos;ll collaborate to
-              transform your ideas into a digital reality.
+              I specialize i <b>developing custom, responsive websites</b> that
+              balance asthetics and user experience. Using technologies like{' '}
+              React, Tailwind, and PotsgreSQL, I craft{' '}
+              <b>user-friendly interfaces</b> tailored to my client&apos;s
+              needs. My process includes in-depth research, clean UI/UX design,
+              and efficient coding pratices to ensure{' '}
+              <b>performance and accessibility</b>.
             </p>
 
             <h3 className="paragraph-lg">
@@ -71,39 +73,15 @@ const AboutMyWork = ({ isDarkMode }) => {
             </h3>
 
             <ul className="uL-parent">
-              <li className="paragraph-md uL-child">
-                <img
-                  src={isDarkMode ? deliver.layout.light : deliver.layout.dark}
-                  alt=""
-                />
-                Designed responsive websites tailored to your needs.
-              </li>
-              <li className="paragraph-md uL-child">
-                <img
-                  src={isDarkMode ? deliver.modern.light : deliver.modern.dark}
-                  alt=""
-                />
-                Clean, modern designs focused on usability and a visual appeal.
-              </li>
-              <li className="paragraph-md uL-child">
-                <img
-                  src={
-                    isDarkMode
-                      ? deliver.intuitive.light
-                      : deliver.intuitive.dark
-                  }
-                  alt=""
-                />
-                Websites that are functional, accessible, and intuitive for all
-                users.
-              </li>
-              <li className="paragraph-md uL-child">
-                <img
-                  src={isDarkMode ? deliver.design.light : deliver.design.dark}
-                  alt=""
-                />
-                Collabortaive designs that turn your ideas into a reality.
-              </li>
+              {deliverItems.map((item) => (
+                <li key={item.id} className="paragraph-md uL-child">
+                  <img
+                    src={isDarkMode ? item.iconLight : item.iconDark}
+                    alt=""
+                  />
+                  {item.text}
+                </li>
+              ))}
             </ul>
           </div>
 

@@ -20,6 +20,19 @@ export const portfolio = [
   },
   {
     id: 2,
+    title: 'Haute Bridal Glam',
+    category: 'Website',
+    image: portfolioImages.hatebridalglam,
+    tools: [
+      { id: 1, skill: 'React', icon: skills.react },
+      { id: 2, skill: 'Sass', icon: skills.sass },
+      { id: 3, skill: 'Tailwind', icon: skills.tw },
+    ],
+    desc: 'Bridal makeup artist, serving weddings in Texas. Showcases clients services, expertise, packages, and a minimal animation for the landing page, in an elegant interface.',
+    link: 'https://hautebridalglam.netlify.app/',
+  },
+  {
+    id: 3,
     title: 'Nike',
     category: 'Template',
     image: portfolioImages.nikeTemplate,
@@ -32,7 +45,7 @@ export const portfolio = [
     link: 'https://niketemplate.netlify.app/',
   },
   {
-    id: 3,
+    id: 4,
     title: 'TG Photography',
     category: 'Website',
     image: portfolioImages.taniaPhotography,

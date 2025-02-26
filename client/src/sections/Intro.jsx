@@ -24,12 +24,13 @@ const Intro = () => {
               <b>Front End Web Developer</b>.
             </p>
             <p className="paragraph-lg">
-              I build websites that are visually engaging, with a focus on{' '}
-              <b>simplicity</b> and <b>elegance</b>, ensuring that users can
-              easily navigate and enjoy a smooth experience.
+              I build visually engaging websites, with a focus on{' '}
+              <b>simplicity</b> and <b>elegance</b>. My goal is to ensure that
+              users can easily navigate and enjoy a smooth experience.
             </p>
             <p className="paragraph-lg">
-              Outside of building websites, I like to play chess, and watch t.v.
+              Outside of building websites, you&apos;ll find me playing chess,
+              or watching tv movies/shows.
             </p>
             <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-6 max-md:mx-auto">
               <img
