@@ -29,7 +29,7 @@ export const portfolio = [
       { id: 3, skill: 'Tailwind', icon: skills.tw },
     ],
     desc: 'Bridal makeup artist, serving weddings in Texas. Showcases clients services, expertise, packages, and a minimal animation for the landing page, in an elegant interface.',
-    link: 'https://hautebridalglam.netlify.app/',
+    link: 'https://hautebridalglam.com/',
   },
   {
     id: 3,
