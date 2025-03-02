@@ -32,16 +32,6 @@ const AboutMyWork = ({ isDarkMode }) => {
           repeat: -1,
           yoyo: true,
         });
-
-        gsap.to(icon, {
-          x: `-=${floatX}`,
-          y: `-=${floatY}`,
-          duration,
-          ease: 'sine.inOut',
-          repeat: -1,
-          yoyo: true,
-          delay: duration / 2,
-        });
       });
     });
 
@@ -59,12 +49,11 @@ const AboutMyWork = ({ isDarkMode }) => {
         <div id="container" className="amw">
           <div className="amw__sectionOne">
             <p className="paragraph-lg pt-1 pb-4">
-              I specialize i <b>developing custom, responsive websites</b> that
-              balance asthetics and user experience. Using technologies like{' '}
-              React, Tailwind, and PotsgreSQL, I craft{' '}
-              <b>user-friendly interfaces</b> tailored to my client&apos;s
-              needs. My process includes in-depth research, clean UI/UX design,
-              and efficient coding pratices to ensure{' '}
+              I specialize in <b>websites</b> that balance asthetics and user
+              experience. Using technologies like React combined with CSS and
+              PotsgreSQL, I build <b>user-friendly interfaces</b> tailored to my
+              client&apos;s needs. My process includes in-depth research, clean
+              UI/UX design, and efficient coding pratices to ensure{' '}
               <b>performance and accessibility</b>.
             </p>
 

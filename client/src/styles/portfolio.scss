@@ -35,7 +35,7 @@
       transition: transform 0.3s ease;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 768px) {
       @media (hover: hover) {
         &::after {
           content: '';
