@@ -49,11 +49,11 @@ const AboutMyWork = ({ isDarkMode }) => {
         <div id="container" className="amw">
           <div className="amw__sectionOne">
             <p className="paragraph-lg pt-1 pb-4">
-              I specialize in <b>websites</b> that balance asthetics and user
-              experience. Using technologies like React combined with CSS and
-              PotsgreSQL, I build <b>user-friendly interfaces</b> tailored to my
-              client&apos;s needs. My process includes in-depth research, clean
-              UI/UX design, and efficient coding pratices to ensure{' '}
+              I specialize in making <b>websites</b> that balance asthetics and
+              user experience. Using technologies like React combined with CSS
+              and PotsgreSQL, I create <b>user-friendly interfaces</b> tailored
+              to my client&apos;s needs. My process includes in-depth research,
+              clean UI/UX design, and efficient coding pratices to ensure{' '}
               <b>performance and accessibility</b>.
             </p>
 
