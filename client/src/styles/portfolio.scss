@@ -1,7 +1,7 @@
 .portfolio {
   gap: 16px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(262px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   @media (max-width: 768px) {
     overflow-x: scroll;
@@ -65,10 +65,9 @@
   }
 
   &__skill {
-    font-size: 1rem;
-    font-weight: 500;
-
-    @apply paragraph-md;
+    font-family: var(--ff-3);
+    font-size: .92rem;
+    color: var(--text1-op-md);
   }
 
   &__ctrlBtn {

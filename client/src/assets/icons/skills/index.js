@@ -8,6 +8,11 @@ import expressDarkHover from './expressDarkHover-icon.svg';
 import expressLight from './expressLight-icon.svg';
 import expressLightHover from './expressLightHover-icon.svg';
 
+import gsapDark from './gsapDark-icon.svg';
+import gsapDarkHover from './gsapDarkHover-icon.svg';
+import gsapLight from './gsapLight-icon.svg';
+import gsapLightHover from './gsapLightHover-icon.svg';
+
 import htmlDark from './htmlDark-icon.svg';
 import htmlDarkHover from './htmlDarkHover-icon.svg';
 import htmlLight from './htmlLight-icon.svg';
@@ -55,6 +60,12 @@ export const skills = {
     darkHover: expressDarkHover,
     light: expressLight,
     lightHover: expressLightHover,
+  },
+  gsap: {
+    dark: gsapDark,
+    darkHover: gsapDarkHover,
+    light: gsapLight,
+    lightHover: gsapLightHover,
   },
   html: {
     dark: htmlDark,

@@ -10,6 +10,10 @@ export const skillsData = [
     ...skills.express,
   },
   {
+    label: 'Gsap',
+    ...skills.gsap,
+  },
+  {
     label: 'HTML',
     ...skills.html,
   },
