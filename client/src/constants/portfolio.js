@@ -58,7 +58,7 @@ export const portfolio = [
       { id: 3, skill: 'Sass', icon: skills.sass },
       { id: 4, skill: 'Tailwind', icon: skills.tw },
     ],
-    desc: "Modern photography portfolio website. Features beautiful galleries, team member's profiles, and a contact system, built Express.",
+    desc: "Modern photography portfolio website. Features beautiful galleries, team member's profiles, and a contact form, built with Express.",
     link: 'https://taniagutti.com/',
   },
 ];
