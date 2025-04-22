@@ -45,7 +45,7 @@ export const portfolio = [
       { id: 5, skill: 'Gsap', icon: skills.gsap },
     ],
     desc: 'Professional construction website in Texas showcasing high-quality home building services. Designed with a clean, modern layout, bilingual accessibility, and a contact form built with Express.',
-    link: 'https://primebuildersctp.netlify.app/',
+    link: 'https://primebuilderscpt.com/',
   },
   {
     id: 4,
