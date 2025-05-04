@@ -67,7 +67,7 @@ export const portfolio = [
       { id: 2, skill: "Redux", icon: skills.redux },
       { id: 2, skill: "Tailwind", icon: skills.tw },
     ],
-    desc: "Full-stack 3D modeling and rendering website. Features a 3D model gallery, and a login/signup authentication system to purchase selceted services. Built with Nextjs",
+    desc: "Full-stack 3D modeling and rendering website. Features a portfolio gallery, and a login/signup authentication system to purchase selected services. Built with Nextjs and Redux Toolkit.",
     link: "https://vadas3dstudio.com/",
   },
 ];
