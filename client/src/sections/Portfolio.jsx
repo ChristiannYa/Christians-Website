@@ -70,9 +70,8 @@ const Portfolio = () => {
             <div className="portfolio" ref={containerRef}>
               {portfolio.map((item) => (
                 <div key={item.id} className="portfolio__item">
-                  <div className="flex-col">
+                  <div className="flex-col mb-1">
                     <h2 className="title-lg">{item.title}</h2>
-                    <p className="title-lg-md -mt-1">{item.category}</p>
                   </div>
                   <div className="portfolio__preview">
                     <a

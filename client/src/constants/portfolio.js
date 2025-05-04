@@ -5,7 +5,6 @@ export const portfolio = [
   {
     id: 1,
     title: "Bloom Bistro",
-    category: "Website",
     image: portfolioImages.bloomBistro,
     tools: [
       { id: 1, skill: "PostgreSQL", icon: skills.psql },
@@ -20,7 +19,6 @@ export const portfolio = [
   {
     id: 2,
     title: "Haute Bridal Glam",
-    category: "Website",
     image: portfolioImages.hatebridalglam,
     tools: [
       { id: 1, skill: "React", icon: skills.react },
@@ -33,7 +31,6 @@ export const portfolio = [
   {
     id: 3,
     title: "Prime Builders CPT",
-    category: "Website",
     image: portfolioImages.primeBuildersCPT,
     tools: [
       { id: 1, skill: "Express", icon: skills.express },
@@ -47,7 +44,6 @@ export const portfolio = [
   {
     id: 4,
     title: "TG Photography",
-    category: "Website",
     image: portfolioImages.taniaPhotography,
     tools: [
       { id: 1, skill: "Express", icon: skills.express },
@@ -60,7 +56,6 @@ export const portfolio = [
   {
     id: 5,
     title: "Vadas 3D Studio",
-    category: "Website",
     image: portfolioImages.vadas3dstudio,
     tools: [
       { id: 1, skill: "Nextjs", icon: skills.next },
