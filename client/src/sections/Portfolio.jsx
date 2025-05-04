@@ -1,13 +1,13 @@
-import { useRef, useState, useCallback, useEffect } from 'react';
-import { portfolio } from '../constants/portfolio';
-import { controls } from '../assets/icons';
+import { useRef, useState, useCallback, useEffect } from "react";
+import { portfolio } from "../constants/portfolio";
+import { controls } from "../assets/icons";
 
 const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const containerRef = useRef(null);
 
   const calculateNewIndex = (direction, currentIndex, totalItems) => {
-    if (direction === 'right') {
+    if (direction === "right") {
       return currentIndex === totalItems - 1 ? 0 : currentIndex + 1;
     } else {
       return currentIndex === 0 ? totalItems - 1 : currentIndex - 1;
@@ -19,14 +19,14 @@ const Portfolio = () => {
       if (!containerRef.current) return;
 
       const itemWidth =
-        containerRef.current.querySelector('.portfolio__item').offsetWidth;
+        containerRef.current.querySelector(".portfolio__item").offsetWidth;
       const totalItems = portfolio.length;
 
       const newIndex = calculateNewIndex(direction, currentIndex, totalItems);
 
       containerRef.current.scrollTo({
         left: newIndex * itemWidth,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     },
     [currentIndex]
@@ -36,7 +36,7 @@ const Portfolio = () => {
     if (!containerRef.current) return;
 
     const container = containerRef.current;
-    const itemWidth = container.querySelector('.portfolio__item').offsetWidth;
+    const itemWidth = container.querySelector(".portfolio__item").offsetWidth;
     const scrollPosition = container.scrollLeft;
 
     const newIndex = Math.round(scrollPosition / itemWidth);
@@ -47,8 +47,8 @@ const Portfolio = () => {
     const container = containerRef.current;
     if (!container) return;
 
-    container.addEventListener('scroll', handleScrollChange);
-    return () => container.removeEventListener('scroll', handleScrollChange);
+    container.addEventListener("scroll", handleScrollChange);
+    return () => container.removeEventListener("scroll", handleScrollChange);
   }, [handleScrollChange]);
 
   return (
@@ -98,7 +98,7 @@ const Portfolio = () => {
 
             <div className="flex w-full mt-4 gap-x-4 min-[768px]:hidden">
               <button
-                onClick={() => handleScroll('left')}
+                onClick={() => handleScroll("left")}
                 className="portfolio__ctrlBtn"
                 aria-label="Previous item"
               >
@@ -110,7 +110,7 @@ const Portfolio = () => {
                 />
               </button>
               <button
-                onClick={() => handleScroll('right')}
+                onClick={() => handleScroll("right")}
                 className="portfolio__ctrlBtn"
                 aria-label="Next item"
               >

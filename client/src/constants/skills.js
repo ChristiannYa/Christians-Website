@@ -1,44 +1,52 @@
-import { skills } from '../assets/icons';
+import { skills } from "../assets/icons";
 
 export const skillsData = [
   {
-    label: 'CSS',
+    label: "CSS",
     ...skills.css,
   },
   {
-    label: 'Express',
+    label: "Express",
     ...skills.express,
   },
   {
-    label: 'Gsap',
+    label: "Gsap",
     ...skills.gsap,
   },
   {
-    label: 'HTML',
+    label: "HTML",
     ...skills.html,
   },
   {
-    label: 'JavaScript',
+    label: "JavaScript",
     ...skills.js,
   },
   {
-    label: 'Node',
+    label: "Next.js",
+    ...skills.nextjs,
+  },
+  {
+    label: "Node",
     ...skills.node,
   },
   {
-    label: 'PostgreSQL',
+    label: "PostgreSQL",
     ...skills.psql,
   },
   {
-    label: 'React',
+    label: "React",
     ...skills.react,
   },
   {
-    label: 'Sass',
-    ...skills.sass,
+    label: "Redux",
+    ...skills.redux,
   },
   {
-    label: 'Tailwind',
+    label: "TypeScript",
+    ...skills.ts,
+  },
+  {
+    label: "Tailwind",
     ...skills.tw,
   },
 ];

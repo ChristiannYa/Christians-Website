@@ -5,9 +5,9 @@
     tailwind.config.js file as well
   */
 
-  --ff-1: 'MR ROBOT', monospace;
-  --ff-2: 'Albert Sans', serif;
-  --ff-3: 'Nunito', serif;
+  --ff-1: "MR ROBOT", monospace;
+  --ff-2: "Albert Sans", serif;
+  --ff-3: "Nunito", serif;
 
   /* Default colors */
   --acc-1: #b70007;
@@ -20,7 +20,7 @@
   --hover-link-color: #070808;
   --hover-link-active: #b70007;
 
-  --componentBg-1: rgba(255, 255, 255, 0.12);
+  --componentBg-1: rgba(255, 255, 255, 0.08);
   --componentBg-2: #eaedee;
 }
 

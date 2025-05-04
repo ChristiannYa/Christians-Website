@@ -1,3 +1,11 @@
+@use './styles/aboutMyWork.scss';
+@use './styles/nav.scss';
+@use './styles/portfolio.scss';
+@use './styles/scrollDownButton.css';
+@use './styles/toggleThemeBtn.css';
+@use './styles/typography.scss';
+@use './styles/variables.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @font-face {
@@ -8,14 +16,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import './styles/aboutMyWork.scss';
-@import './styles/nav.scss';
-@import './styles/portfolio.scss';
-@import './styles/scrollDownButton.css';
-@import './styles/toggleThemeBtn.css';
-@import './styles/typography.scss';
-@import './styles/variables.css';
 
 html {
   color-scheme: light dark;
