@@ -6,12 +6,8 @@ export const skillsData = [
     ...skills.css,
   },
   {
-    label: "Express",
-    ...skills.express,
-  },
-  {
-    label: "Gsap",
-    ...skills.gsap,
+    label: "Go",
+    ...skills.go,
   },
   {
     label: "HTML",
@@ -24,10 +20,6 @@ export const skillsData = [
   {
     label: "Next.js",
     ...skills.nextjs,
-  },
-  {
-    label: "Node",
-    ...skills.node,
   },
   {
     label: "PostgreSQL",

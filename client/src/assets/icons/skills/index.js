@@ -3,15 +3,10 @@ import cssDarkHover from "./cssDarkHover-icon.svg";
 import cssLight from "./cssLight-icon.svg";
 import cssLightHover from "./cssLightHover-icon.svg";
 
-import expressDark from "./expressDark-icon.svg";
-import expressDarkHover from "./expressDarkHover-icon.svg";
-import expressLight from "./expressLight-icon.svg";
-import expressLightHover from "./expressLightHover-icon.svg";
-
-import gsapDark from "./gsapDark-icon.svg";
-import gsapDarkHover from "./gsapDarkHover-icon.svg";
-import gsapLight from "./gsapLight-icon.svg";
-import gsapLightHover from "./gsapLightHover-icon.svg";
+import goDark from "./goDark-icon.svg";
+import goDarkHover from "./goDarkHover-icon.svg";
+import goLight from "./goLight-icon.svg";
+import goLightHover from "./goLightHover-icon.svg";
 
 import htmlDark from "./htmlDark-icon.svg";
 import htmlDarkHover from "./htmlDarkHover-icon.svg";
@@ -27,11 +22,6 @@ import nextjsDark from "./nextjsDark-icon.svg";
 import nextjsDarkHover from "./nextjsDarkHover-icon.svg";
 import nextjsLight from "./nextjsLight-icon.svg";
 import nextjsLightHover from "./nextjsLightHover-icon.svg";
-
-import nodeDark from "./nodeDark-icon.svg";
-import nodeDarkHover from "./nodeDarkHover-icon.svg";
-import nodeLight from "./nodeLight-icon.svg";
-import nodeLightHover from "./nodeLightHover-icon.svg";
 
 import psqlDark from "./psqlDark-icon.svg";
 import psqlDarkHover from "./psqlDarkHover-icon.svg";
@@ -65,17 +55,11 @@ export const skills = {
     light: cssLight,
     lightHover: cssLightHover,
   },
-  express: {
-    dark: expressDark,
-    darkHover: expressDarkHover,
-    light: expressLight,
-    lightHover: expressLightHover,
-  },
-  gsap: {
-    dark: gsapDark,
-    darkHover: gsapDarkHover,
-    light: gsapLight,
-    lightHover: gsapLightHover,
+  go: {
+    dark: goDark,
+    darkHover: goDarkHover,
+    light: goLight,
+    lightHover: goLightHover,
   },
   html: {
     dark: htmlDark,
@@ -94,12 +78,6 @@ export const skills = {
     darkHover: nextjsDarkHover,
     light: nextjsLight,
     lightHover: nextjsLightHover,
-  },
-  node: {
-    dark: nodeDark,
-    darkHover: nodeDarkHover,
-    light: nodeLight,
-    lightHover: nodeLightHover,
   },
   psql: {
     dark: psqlDark,
