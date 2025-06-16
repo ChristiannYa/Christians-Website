@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import { useState } from 'react';
+import PropTypes from "prop-types";
+import { useState } from "react";
 
-import { miscellaneous } from '../assets/icons';
+import { miscellaneous } from "../assets/icons";
 
 const Contact = ({ isDarkMode }) => {
   const [copied, setCopied] = useState(false);
@@ -9,7 +9,7 @@ const Contact = ({ isDarkMode }) => {
   const currentYear = new Date().getFullYear();
 
   const handleCopy = () => {
-    const email = document.querySelector('#email').textContent;
+    const email = document.querySelector("#email").textContent;
 
     navigator.clipboard.writeText(email).then(() => {
       setCopied(true);
@@ -23,13 +23,13 @@ const Contact = ({ isDarkMode }) => {
       <div className="section__child">
         <div className="screen800 componentBg p-4 rounded-lg">
           <h2 className="subheading-2 font-semibold">Like What You See?</h2>
-          <p className="paragraph-xl">
+          <p className="paragraph-lg">
             If you&apos;ve liked my work, and would like to reach for more
             information, you&apos;ll find my email below. I&apos;d love to hear
             about your ideas and how I can help you bring them to life.
           </p>
           <div className="flex items-center flex-wrap gap-x-2 mt-1 w-fit">
-            <p id="email" className="paragraph-xl mt-1">
+            <p id="email" className="paragraph-lg mt-1">
               chris.lopez.webdev@gmail.com
             </p>
             <button
@@ -67,7 +67,7 @@ const Contact = ({ isDarkMode }) => {
           </div>
         </div>
 
-        <div className="flex flex-col mt-12 px-4">
+        <div className="flex flex-col mt-12">
           <p className="paragraph-lg">
             ©{startYear}
             {currentYear > startYear && ` - ©${currentYear}`}

@@ -1,10 +1,10 @@
-import PropTypes from 'prop-types';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
+import PropTypes from "prop-types";
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
 
-import { skillsData } from '../constants/skills';
-import SkillIcon from '../components/SkillIcon';
-import { deliverItems } from '../constants/deliver';
+import { skillsData } from "../constants/skills";
+import SkillIcon from "../components/SkillIcon";
+import { deliverItems } from "../constants/deliver";
 
 const AboutMyWork = ({ isDarkMode }) => {
   const containerRef = useRef(null);
@@ -28,7 +28,7 @@ const AboutMyWork = ({ isDarkMode }) => {
           x: `+=${floatX}`,
           y: `+=${floatY}`,
           duration,
-          ease: 'sine.inOut',
+          ease: "sine.inOut",
           repeat: -1,
           yoyo: true,
         });
@@ -48,14 +48,19 @@ const AboutMyWork = ({ isDarkMode }) => {
 
         <div id="container" className="amw">
           <div className="amw__sectionOne">
-            <p className="paragraph-lg pt-1 pb-4">
-              I specialize in making <b>websites</b> that balance asthetics and
-              user experience. Using technologies like React combined with CSS
-              and PotsgreSQL, I create <b>user-friendly interfaces</b> tailored
-              to my client&apos;s needs. My process includes in-depth research,
-              clean UI/UX design, and efficient coding pratices to ensure{' '}
-              <b>performance and accessibility</b>.
-            </p>
+            <div className="paragraph-lg pt-1 pb-4">
+              <p>
+                I specialize in making <b>websites</b> that balance asthetics
+                and user experience. Using technologies like{" "}
+                <b>Nextjs, Tailwind, Go, and Postgres</b>, I create
+                user-friendly interfaces tailored to my client&apos;s needs. To
+                turn those technologies into meaningful experiences, I follow a
+                clear and user-focused development process. This involves
+                understanding client goals to interface design to backend logic,
+                I ensure every layer of the website performs efficiently and is
+                easy to navigate.
+              </p>
+            </div>
 
             <h3 className="paragraph-lg">
               Here is what I offer when creating your website:

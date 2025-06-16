@@ -35,7 +35,7 @@
   --hover-link-active: #b70007;
 
   --componentBg-1: rgba(0, 0, 0, 0.12);
-  --componentBg-2: #171717;
+  --componentBg-2: rgba(255, 255, 255, 0.05);
 }
 
 body {
