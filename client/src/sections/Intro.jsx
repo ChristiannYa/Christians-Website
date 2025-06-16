@@ -31,7 +31,7 @@ const Intro = ({ isDarkMode }) => {
                   isDarkMode ? "text-[#242938]" : "text-[#ffffff]"
                 }`}
               >
-                <b>Full-Stack Web Developer</b>.
+                <b>Full-Stack Web Developer</b>
               </p>
             </div>
             <p className="paragraph-lg">
