@@ -50,15 +50,15 @@ const AboutMyWork = ({ isDarkMode }) => {
           <div className="amw__sectionOne">
             <div className="paragraph-lg pt-1 pb-4">
               <p>
-                I specialize in making <b>websites</b> that balance asthetics
+                I specialize in making <b>websites</b> that balance aesthetics
                 and user experience. Using technologies like{" "}
                 <b>Nextjs, Tailwind, Go, and Postgres</b>, I create
                 user-friendly interfaces tailored to my client&apos;s needs. To
-                turn these technologies into meaningful experiences, I follow a
+                turn these technologies into meaningful websites, I follow a
                 clear and user-focused development process. This involves
-                understanding client goals to interface design to backend logic,
-                I ensure every layer of the website performs efficiently and is
-                easy to navigate.
+                understanding the user&apos;s goals, interface design, and
+                building backend logic, ensuring every layer of the website
+                performs efficiently.
               </p>
             </div>
 
