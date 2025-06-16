@@ -1,11 +1,12 @@
-import { christian } from '../assets/images';
-import ScrollDownMouse from '../components/ScrollDownMouse';
+import PropTypes from "prop-types";
+import { christian } from "../assets/images";
+import ScrollDownMouse from "../components/ScrollDownMouse";
 
-const Intro = () => {
+const Intro = ({ isDarkMode }) => {
   const handleScrollDown = () => {
-    const nextSection = document.getElementById('portfolio');
+    const nextSection = document.getElementById("portfolio");
     if (nextSection) {
-      nextSection.scrollIntoView({ behavior: 'smooth' });
+      nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -20,19 +21,29 @@ const Intro = () => {
             Hi I am christian
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-2">
+            <div
+              className={`w-fit px-1.5 py-0.5 rounded-md ${
+                isDarkMode ? "bg-[#D4D4D8]" : "bg-[#242938]"
+              }`}
+            >
+              <p
+                className={`paragraph ${
+                  isDarkMode ? "text-[#242938]" : "text-[#ffffff]"
+                }`}
+              >
+                <b>Full-Stack Web Developer</b>.
+              </p>
+            </div>
             <p className="paragraph-lg">
-              <b>Front End Web Developer</b>.
-            </p>
-            <p className="paragraph-lg">
-              I build visually engaging websites, with a focus on{' '}
+              I build visually engaging websites, with a focus on{" "}
               <b>simplicity</b> and <b>elegance</b>. My goal is to ensure that
-              users can easily navigate and enjoy a smooth experience.
+              users can easily navigate through a clean and well crafted site.
             </p>
             <p className="paragraph-lg">
               Outside of building websites, you&apos;ll find me playing chess,
               or watching tv movies/shows.
             </p>
-            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-6 max-md:mx-auto">
+            <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-6 max-md:mx-auto mt-0.5">
               <img
                 src={christian}
                 alt="Christian photo"
@@ -47,6 +58,10 @@ const Intro = () => {
       </div>
     </section>
   );
+};
+
+Intro.propTypes = {
+  isDarkMode: PropTypes.bool.isRequired,
 };
 
 export default Intro;

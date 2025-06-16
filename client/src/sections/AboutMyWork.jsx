@@ -52,7 +52,10 @@ const AboutMyWork = ({ isDarkMode }) => {
               <p>
                 I specialize in making <b>websites</b> that balance aesthetics
                 and user experience. Using technologies like{" "}
-                <b>Nextjs, Tailwind, Go, and Postgres</b>, I create
+                <span className="font-[600]">Nextjs</span>,{" "}
+                <span className="font-[600]">Tailwind</span>,{" "}
+                <span className="font-[600]">Go</span>, and{" "}
+                <span className="font-[600]">Postgres</span>, I create
                 user-friendly interfaces tailored to my client&apos;s needs. To
                 turn these technologies into meaningful websites, I follow a
                 clear and user-focused development process. This involves
