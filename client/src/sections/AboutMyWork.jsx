@@ -54,7 +54,7 @@ const AboutMyWork = ({ isDarkMode }) => {
                 and user experience. Using technologies like{" "}
                 <b>Nextjs, Tailwind, Go, and Postgres</b>, I create
                 user-friendly interfaces tailored to my client&apos;s needs. To
-                turn those technologies into meaningful experiences, I follow a
+                turn these technologies into meaningful experiences, I follow a
                 clear and user-focused development process. This involves
                 understanding client goals to interface design to backend logic,
                 I ensure every layer of the website performs efficiently and is
