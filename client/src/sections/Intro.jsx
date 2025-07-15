@@ -1,8 +1,7 @@
-import PropTypes from "prop-types";
 import { christian } from "../assets/images";
 import ScrollDownMouse from "../components/ScrollDownMouse";
 
-const Intro = ({ isDarkMode }) => {
+const Intro = () => {
   const handleScrollDown = () => {
     const nextSection = document.getElementById("portfolio");
     if (nextSection) {
@@ -21,22 +20,14 @@ const Intro = ({ isDarkMode }) => {
             Hi I am christian
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-2">
-            <div
-              className={`w-fit px-1.5 py-0.5 rounded-md ${
-                isDarkMode ? "bg-[#D4D4D8]" : "bg-[#242938]"
-              }`}
-            >
               <p
-                className={`paragraph ${
-                  isDarkMode ? "text-[#242938]" : "text-[#ffffff]"
-                }`}
+                className="paragraph-lg leading-none font-[600]"
               >
-                <b>Full-Stack Web Developer</b>
+                Full-Stack Web Developer
               </p>
-            </div>
             <p className="paragraph-lg">
               I build visually engaging websites, with a focus on{" "}
-              <b>simplicity</b> and <b>elegance</b>. My goal is to ensure that
+              simplicity and elegance. My goal is to ensure that
               users can easily navigate through a clean and well crafted site.
             </p>
             <p className="paragraph-lg">
@@ -58,10 +49,6 @@ const Intro = ({ isDarkMode }) => {
       </div>
     </section>
   );
-};
-
-Intro.propTypes = {
-  isDarkMode: PropTypes.bool.isRequired,
 };
 
 export default Intro;

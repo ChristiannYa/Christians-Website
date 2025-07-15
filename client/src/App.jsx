@@ -31,7 +31,7 @@ export default function App() {
   return (
     <div className="flexcol">
       <Nav isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
-      <Intro isDarkMode={isDarkMode} />
+      <Intro/>
       <Portfolio />
       <WhatIDo isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />

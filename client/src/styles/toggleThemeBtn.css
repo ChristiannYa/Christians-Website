@@ -2,8 +2,8 @@
   position: relative;
   width: 60px;
   height: 30px;
-  --light: #d8dbe0;
-  --dark: #28292c;
+  --light: #d4d4d8;
+  --dark: var(--bg-color);
 }
 
 .switch-label {
@@ -13,7 +13,7 @@
   background-color: var(--light);
   border-radius: 25px;
   cursor: pointer;
-  border: 2px solid var(--dark);
+  border: 2px solid #242938;
   position: relative;
 }
 
@@ -48,7 +48,7 @@
 
 .checkbox:checked + .switch-label .slider::before {
   transform: translateX(30px);
-  -webkit-box-shadow: inset 8px -4px 0px 0px var(--light); 
-  box-shadow: inset 8px -4px 0px 0px var(--light); 
-  background-color: var(--dark);
+  -webkit-box-shadow: inset 8px -4px 0px 0px var(--light);
+  box-shadow: inset 8px -4px 0px 0px #d4d4d8;
+  background-color: var(--dark); /* has to match background */
 }
