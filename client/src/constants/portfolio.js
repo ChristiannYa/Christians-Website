@@ -4,20 +4,6 @@ import { skills } from "../assets/icons";
 export const portfolio = [
   {
     id: 1,
-    title: "Bloom Bistro",
-    image: portfolioImages.bloomBistro,
-    tools: [
-      { id: 1, skill: "PostgreSQL", icon: skills.psql },
-      { id: 2, skill: "Express", icon: skills.express },
-      { id: 3, skill: "React", icon: skills.react },
-      { id: 4, skill: "Node", icon: skills.node },
-      { id: 5, skill: "Tailwind", icon: skills.tw },
-    ],
-    desc: "Full-Stack Restaurant website featuring dynamic routing for individual menu items, PostgreSQL database integration with Render deployment, and secure admin authentication system to add, delete, and edit menu items.",
-    link: "https://bloom-bistro.netlify.app/",
-  },
-  {
-    id: 2,
     title: "Haute Bridal Glam",
     image: portfolioImages.hatebridalglam,
     tools: [
@@ -29,7 +15,7 @@ export const portfolio = [
     link: "https://hautebridalglam.com/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Prime Builders CPT",
     image: portfolioImages.primeBuildersCPT,
     tools: [
@@ -42,7 +28,7 @@ export const portfolio = [
     link: "https://primebuilderscpt.com/",
   },
   {
-    id: 4,
+    id: 3,
     title: "TG Photography",
     image: portfolioImages.taniaPhotography,
     tools: [
@@ -54,7 +40,7 @@ export const portfolio = [
     link: "https://taniagutti.com/",
   },
   {
-    id: 5,
+    id: 4,
     title: "Vadas 3D Studio",
     image: portfolioImages.vadas3dstudio,
     tools: [
