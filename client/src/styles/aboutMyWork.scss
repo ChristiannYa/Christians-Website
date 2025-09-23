@@ -56,7 +56,7 @@
       align-items: center;
       flex-wrap: wrap;
 
-      &> *:nth-child(7) {
+      &> *:nth-child(7), *:nth-child(8) {
         animation: spin 10s linear infinite;
       }
     }

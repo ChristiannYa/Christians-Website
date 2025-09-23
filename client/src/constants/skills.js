@@ -30,8 +30,8 @@ export const skillsData = [
     ...skills.react,
   },
   {
-    label: "Redux",
-    ...skills.redux,
+    label: "TanStack Query",
+    ...skills.tanStackQuery,
   },
   {
     label: "TypeScript",
@@ -40,5 +40,9 @@ export const skillsData = [
   {
     label: "Tailwind",
     ...skills.tw,
+  },
+  {
+    label: "Zustand",
+    ...skills.zustand,
   },
 ];

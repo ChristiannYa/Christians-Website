@@ -33,10 +33,10 @@ import reactDarkHover from "./reactDarkHover-icon.svg";
 import reactLight from "./reactLight-icon.svg";
 import reactLightHover from "./reactLightHover-icon.svg";
 
-import reduxLight from "./reduxLight-icon.svg";
-import reduxLightHover from "./reduxLightHover-icon.svg";
-import reduxDark from "./reduxDark-icon.svg";
-import reduxDarkHover from "./reduxDarkHover-icon.svg";
+import tanStackQueryDark from "./tanStackQueryDark-icon.svg";
+import tanStackQueryDarkHover from "./tanStackQueryDarkHover-icon.svg";
+import tanStackQueryLight from "./tanStackQueryLight-icon.svg";
+import tanStackQueryLightHover from "./tanStackQueryLightHover-icon.svg";
 
 import tsLight from "./tsLight-icon.svg";
 import tsLightHover from "./tsLightHover-icon.svg";
@@ -47,6 +47,11 @@ import twDark from "./twDark-icon.svg";
 import twDarkHover from "./twDarkHover-icon.svg";
 import twLight from "./twLight-icon.svg";
 import twLightHover from "./twLightHover-icon.svg";
+
+import zustandDark from "./zustandDark-icon.svg";
+import zustandDarkHover from "./zustandDarkHover-icon.svg";
+import zustandLight from "./zustandLight-icon.svg";
+import zustandLightHover from "./zustandLightHover-icon.svg";
 
 export const skills = {
   css: {
@@ -91,11 +96,11 @@ export const skills = {
     light: reactLight,
     lightHover: reactLightHover,
   },
-  redux: {
-    dark: reduxDark,
-    darkHover: reduxDarkHover,
-    light: reduxLight,
-    lightHover: reduxLightHover,
+  tanStackQuery: {
+    dark: tanStackQueryDark,
+    darkHover: tanStackQueryDarkHover,
+    light: tanStackQueryLight,
+    lightHover: tanStackQueryLightHover,
   },
   ts: {
     dark: tsDark,
@@ -108,5 +113,11 @@ export const skills = {
     darkHover: twDarkHover,
     light: twLight,
     lightHover: twLightHover,
+  },
+  zustand: {
+    dark: zustandDark,
+    darkHover: zustandDarkHover,
+    light: zustandLight,
+    lightHover: zustandLightHover,
   },
 };
