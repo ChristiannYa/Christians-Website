@@ -14,7 +14,7 @@ const Intro = () => {
       id="home"
       className="section md:flexcol-center max-md:pt-20 max-md:min-h-fit max-md:mb-24"
     >
-      <div className="section__child md:flex">
+      <div className="section__child flex max-md:flex-col max-md:space-y-6">
         <div>
           <h1 className="text-acc-1 font-robot text-4xl mb-1">
             Hi I am christian
