@@ -20,19 +20,17 @@ const Intro = () => {
             Hi I am christian
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-2">
-              <p
-                className="paragraph-lg leading-none font-[600]"
-              >
-                Full-Stack Web Developer
-              </p>
-            <p className="paragraph-lg">
-              I build visually engaging websites, with a focus on{" "}
-              simplicity and elegance. My goal is to ensure that
-              users can easily navigate through a clean and well crafted site.
+            <p className="paragraph-lg leading-none font-[600]">
+              Full-Stack Web Developer
             </p>
             <p className="paragraph-lg">
-              Outside of building websites, you&apos;ll find me playing chess,
-              or watching tv movies/shows.
+              I build visually engaging websites, with a focus on simplicity and
+              elegance. My goal is to ensure that users can easily navigate
+              through a clean and well crafted site.
+            </p>
+            <p className="paragraph-lg">
+              Outside of building websites, you&apos;ll find me playing chess or
+              watching TV shows and movies.
             </p>
             <div className="overflow-hidden rounded-full w-[250px] aspect-square max-md:w-[200px] max-md:my-6 max-md:mx-auto mt-0.5">
               <img

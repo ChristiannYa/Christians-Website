@@ -1,15 +1,26 @@
 .scrolldown {
-  --sizeX: 20px;
-  --sizeY: 33px;
-  position: relative;
-  width: var(--sizeX);
-  height: var(--sizeY);
-  margin-left: var(sizeX / 2);
-  border: calc(var(--sizeX) / 10) solid var(--text1-op-full);
-  border-radius: 50px;
-  box-sizing: border-box;
-  margin-bottom: 16px;
-  cursor: pointer;
+  display: none; /* Hidden by default */
+}
+
+/* Only render if it supports hover */
+@media (hover: hover) {
+  .scrolldown {
+    --sizeX: 20px;
+    --sizeY: 33px;
+
+    border: calc(var(--sizeX) / 10) solid var(--text1-op-full);
+    border-radius: 50px;
+    cursor: pointer;
+    box-sizing: border-box;
+
+    width: var(--sizeX);
+    height: var(--sizeY);
+    margin-left: var(sizeX / 2);
+    margin-bottom: 16px;
+
+    position: relative;
+    display: block;
+  }
 }
 
 .scrolldown::before {

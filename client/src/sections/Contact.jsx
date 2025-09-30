@@ -72,7 +72,7 @@ const Contact = ({ isDarkMode }) => {
             ©{startYear}
             {currentYear > startYear && ` - ©${currentYear}`}
           </p>
-          <p className="paragraph-lg">Chriswebdev</p>
+          <p className="paragraph-lg">Christianwebdev</p>
           <p className="paragraph-lg">All rights reserved</p>
         </div>
       </div>

@@ -50,8 +50,8 @@ const AboutMyWork = ({ isDarkMode }) => {
           <div className="amw__sectionOne">
             <div className="paragraph-lg pt-1 pb-4">
               <p>
-                I specialize in making <b>websites</b> that balance aesthetics
-                and user experience. Using technologies like{" "}
+                I specialize in developing <b>websites</b> that balance
+                aesthetics and user experience. Using technologies like{" "}
                 <span className="font-[600]">Nextjs</span>,{" "}
                 <span className="font-[600]">Tailwind</span>,{" "}
                 <span className="font-[600]">Go</span>, and{" "}
