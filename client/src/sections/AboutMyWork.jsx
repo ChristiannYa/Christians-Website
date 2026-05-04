@@ -25,7 +25,7 @@ const AboutMyWork = ({ isDarkMode }) => {
                 experience. 
                 I use technologies like <span className="font-[600]">VueJs</span> and {" "}
                 <span className="font-[600]">Tailwind</span> for the interface,{" "}
-                <span className="font-[600]">Kotlin</span> for backend or Android development, 
+                <span className="font-[600]">Kotlin</span> for backend and/or Android development, 
                 and{" "} <span className="font-[600]">PostgreSQL</span> for database 
                 management. 
                 My development process is structured and user-focused, covering 

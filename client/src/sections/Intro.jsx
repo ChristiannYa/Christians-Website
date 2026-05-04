@@ -21,7 +21,7 @@ const Intro = () => {
           </h1>
           <div className="w-[400px] max-md:w-full flexcol gap-y-1">
             <div>
-              <p className="paragraph-lg leading-none font-bold">
+              <p className="paragraph-lg leading-tight font-bold">
                 Full-Stack Web & Android App Developer
               </p>
               <p className="paragraph opacity-80">Based in Houston, TX</p>
