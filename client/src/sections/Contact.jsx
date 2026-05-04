@@ -21,8 +21,8 @@ const Contact = ({ isDarkMode }) => {
   return (
     <div id="contact" className="section min-h-fit pt-14 pb-8 max-md:pt-20">
       <div className="section__child">
-        <div className="screen800 componentBg p-4 rounded-lg">
-          <h2 className="subheading-2 font-semibold">Like What You See?</h2>
+        <div className="screen800 componentBg p-4 rounded-2xl">
+          <h2 className="subheading">Contact Me</h2>
           <p className="paragraph-lg">
             If you&apos;ve liked my work, and would like to reach for more
             information, you&apos;ll find my email below. I&apos;d love to hear

@@ -26,7 +26,7 @@ const SkillIcon = ({ skill, isDarkMode }) => {
     <img
       src={getIconSource()}
       alt={skill.name}
-      className="w-[52px] h-[52px] max-[769px]:w-12 max-[769px]:h-12"
+      className="w-[3.25rem] h-[3.25rem] max-[769px]:w-12 max-[769px]:h-12"
       width={18}
       height={18}
       onMouseEnter={() => isMouseDevice && setIsHovered(true)}

@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
+import { useRef } from "react";
 
 import { skillsData } from "../constants/skills";
 import SkillIcon from "../components/SkillIcon";
@@ -8,35 +7,6 @@ import { deliverItems } from "../constants/deliver";
 
 const AboutMyWork = ({ isDarkMode }) => {
   const containerRef = useRef(null);
-
-  useEffect(() => {
-    const icons = containerRef.current.children;
-
-    const ctx = gsap.context(() => {
-      Array.from(icons).forEach((icon) => {
-        // Random horizontal move
-        const floatX = Math.random() * 10 + 2;
-
-        // Random vertical
-        const floatY = Math.random() * 10 + 2;
-
-        // Random duration between 4-8 seconds
-        const duration = Math.random() * 4 + 4;
-
-        // Animate x and y positions in a continuous loop
-        gsap.to(icon, {
-          x: `+=${floatX}`,
-          y: `+=${floatY}`,
-          duration,
-          ease: "sine.inOut",
-          repeat: -1,
-          yoyo: true,
-        });
-      });
-    });
-
-    return () => ctx.revert();
-  }, []);
 
   return (
     <section
@@ -50,23 +20,22 @@ const AboutMyWork = ({ isDarkMode }) => {
           <div className="amw__sectionOne">
             <div className="paragraph-lg pt-1 pb-4">
               <p>
-                I specialize in developing <b>websites</b> that balance
-                aesthetics and user experience. Using technologies like{" "}
-                <span className="font-[600]">Nextjs</span>,{" "}
-                <span className="font-[600]">Tailwind</span>,{" "}
-                <span className="font-[600]">Go</span>, and{" "}
-                <span className="font-[600]">Postgres</span>, I create
-                user-friendly interfaces tailored to my client&apos;s needs. To
-                turn these technologies into meaningful websites, I follow a
-                clear and user-focused development process. This involves
-                understanding the user&apos;s goals, interface design, and
-                building backend logic, ensuring every layer of the website
-                performs efficiently.
+                I specialize in developing <b>websites</b> and {" "}
+                <b>Android applications</b> that balance aesthetics and user 
+                experience. 
+                I use technologies like <span className="font-[600]">VueJs</span> and {" "}
+                <span className="font-[600]">Tailwind</span> for the interface,{" "}
+                <span className="font-[600]">Kotlin</span> for backend or Android development, 
+                and{" "} <span className="font-[600]">PostgreSQL</span> for database 
+                management. 
+                My development process is structured and user-focused, covering 
+                each layer of your website/application, interface design, logic, and 
+                backend, built to work together seamlessly
               </p>
             </div>
 
             <h3 className="paragraph-lg">
-              Here is what I offer when creating your website:
+              Here is what I offer when creating your web-app:
             </h3>
 
             <ul className="uL-parent">
